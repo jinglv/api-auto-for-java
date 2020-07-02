@@ -14,9 +14,7 @@
         <module>mustache-demo</module>
         <module>json-demo</module>
         <module>extent-report-demo</module>
-        <module>spring-boot-demo</module>
         <module>mybatis-demo</module>
-        <module>spring-boot-demo</module>
     </modules>
 
     <build>

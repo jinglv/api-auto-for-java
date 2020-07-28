@@ -2,20 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cabead3-ff37-46bf-8c3d-1f9ba3e2a8bc" name="Default Changelist" comment="xiang'mu">
+      <change afterPath="$PROJECT_DIR$/../accounting-platform/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/json/TestJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/xml/TestXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/Gpath.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/Gxml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/getGpath.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/getGxml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/config/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/enums/ApiCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/utils/ResultUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/entity/MessageEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/vo/ApiResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/vo/MessageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/repository/InMemoryMessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/spring/boot/demo/controller/MessageControllerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-example/.idea/spring-example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/bean/UserInfo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/enums/AesEnum.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/utils/AesEncryptionUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/utils/EncryptionUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/controller/EncryptionAndDecryptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/faker/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test-tools/src/test/java/com/test/tools/common/utils/EncryptionUtilTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit4-demo/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit5-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit5-demo/src/test/java/com/test/Demo_DyamicTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/testng-demo/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/xUnit-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-assured-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-assured-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/__files/bookDetails.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/bookDetails.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/getBook.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/getBook.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/getBookByPathPatter.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/getBookByPathPatter.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/getBookByQueryParam.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/getBookByQueryParam.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/postAddBookWithBasicAuth.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/postAddBookWithBasicAuth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/postAddBookWithBasicAuthByFiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/postAddBookWithBasicAuthByFiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/postAddBookWithBodyPatter.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/postAddBookWithBodyPatter.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/postAddPersonByXml.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/postAddPersonByXml.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mappings/postAddXmlUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/postAddXmlUser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/__files/bookDetails.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/getBook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/getBookByPathPatter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/getBookByQueryParam.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/postAddBookWithBasicAuth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/postAddBookWithBasicAuthByFiles.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/postAddBookWithBodyPatter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/postAddPersonByXml.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/mappings/postAddXmlUser.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" afterDir="false" />
@@ -45,7 +86,9 @@
       <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/UserService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/impl/OneInterfaceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/target/classes/spring-bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-injection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-ioc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/base/UnitTestBase.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/bean/Bean1Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/ioc/injection/service/InjectionServiceImplTest.class" beforeDir="false" />
@@ -102,14 +145,6 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/spring-boot-demo" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.test" />
-      <recent name="com.demo" />
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring-boot-demo" />
       <recent name="$PROJECT_DIR$/mybatis-demo" />
@@ -117,72 +152,103 @@
       <recent name="$PROJECT_DIR$/extent-report-demo" />
       <recent name="$PROJECT_DIR$/json-demo" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test" />
+      <recent name="com.demo" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock" />
+      <recent name="$PROJECT_DIR$/spring-boot-demo" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/apple/WorkProject/api-auto-for-java/extent-report-demo/src/main/resources/testng.xml">
-    <configuration name="WireMockApplciation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.WireMockApplciation" />
-      <module name="wiremock-demo" />
+  <component name="RunManager" selected="JUnit.TestXml">
+    <configuration name="TestXml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="com.test.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.test.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.test.xml.TestXml" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestApi" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="wiremock-demo" />
+    <configuration name="TestXml.testXMLForFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.test.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.TestApi" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="com.test.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.test.xml.TestXml" />
+      <option name="METHOD_NAME" value="testXMLForFindAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestApi.testGetBook" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="wiremock-demo" />
+    <configuration name="TestXml.testXMLForIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.test.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.TestApi" />
-      <option name="METHOD_NAME" value="testGetBook" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="com.test.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.test.xml.TestXml" />
+      <option name="METHOD_NAME" value="testXMLForIndex" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/apple/WorkProject/api-auto-for-java/extent-report-demo/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="extent-report-demo" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/extent-report-demo/src/main/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
+    <configuration name="TestXml.testXMLForIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.test.xml.TestXml" />
+      <option name="METHOD_NAME" value="testXMLForIt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestXml.testXMLForSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.test.xml.TestXml" />
+      <option name="METHOD_NAME" value="testXMLForSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/apple/WorkProject/api-auto-for-java/extent-report-demo/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.TestApi" />
-        <item itemvalue="TestNG.TestApi.testGetBook" />
-        <item itemvalue="Application.WireMockApplciation" />
+        <item itemvalue="JUnit.TestXml" />
+        <item itemvalue="JUnit.TestXml.testXMLForFindAll" />
+        <item itemvalue="JUnit.TestXml.testXMLForIt" />
+        <item itemvalue="JUnit.TestXml.testXMLForSize" />
+        <item itemvalue="JUnit.TestXml.testXMLForIndex" />
       </list>
     </recent_temporary>
   </component>
@@ -197,41 +263,60 @@
       <option name="presentableId" value="Default" />
       <updated>1593584995774</updated>
       <workItem from="1593584998933" duration="4702000" />
-      <workItem from="1593675716422" duration="2321000" />
+      <workItem from="1593675716422" duration="2480000" />
+      <workItem from="1595908066185" duration="1705000" />
+      <workItem from="1595916414181" duration="5772000" />
     </task>
+    <task id="LOCAL-00001" summary="pom调整">
+      <created>1593678279065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593678279065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="pom调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom调整" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1593588246048">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="533" y="140" key="#com.intellij.ide.util.MemberChooser/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593588246048" />
-    <state x="307" y="23" key="CommitChangelistDialog2" timestamp="1593678245308">
+    <state x="307" y="23" key="CommitChangelistDialog2" timestamp="1593678278897">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="307" y="23" key="CommitChangelistDialog2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678245308" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom" timestamp="1593676963530">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="307" y="23" key="CommitChangelistDialog2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678278897" />
+    <state width="1396" height="189" key="GridCell.Tab.0.bottom" timestamp="1595927200499">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676963530" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center" timestamp="1593676963529">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915408" />
+    <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
+    <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1595926324083" />
+    <state width="1396" height="189" key="GridCell.Tab.0.center" timestamp="1595927200498">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676963529" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left" timestamp="1593676963528">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
+    <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
+    <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
+    <state width="1396" height="189" key="GridCell.Tab.0.left" timestamp="1595927200498">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676963528" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right" timestamp="1593676963530">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
+    <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
+    <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
+    <state width="1396" height="189" key="GridCell.Tab.0.right" timestamp="1595927200499">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676963530" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915407" />
+    <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
+    <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state x="258" y="88" key="Maven.ArtifactSearchDialog" timestamp="1593592601963">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
@@ -244,9 +329,17 @@
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="229" y="65" key="SettingsEditor/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676526735" />
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2" timestamp="1593678282841">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678282841" />
     <state x="114" y="89" key="new project wizard" timestamp="1593676429691">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="114" y="89" key="new project wizard/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676429691" />
+    <state x="385" y="155" width="670" height="676" key="search.everywhere.popup" timestamp="1595916169026">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state x="385" y="155" width="670" height="676" key="search.everywhere.popup/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595916169026" />
   </component>
 </project>

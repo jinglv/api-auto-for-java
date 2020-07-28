@@ -187,8 +187,71 @@ then().body() 可以对响应结果进行断言，在 body 中写入断言：
 ```
 注意:这里的body() 不要和请求体body()以及断言的body()混淆了
 
-### JSON断言
+### JsonPath(Groovy's GPath)
+在 Groovy 的官网，虽然并未提及它在 json 中的使用，但实际上只要是树形的层级关系，无论是 json、xml 或者其他格式，就可以使用这种简单的语法帮我们去找到其中的值，rest-assured 也已经帮我们实现支持了 GPath 的断言方式
+[Groovy Gpath官网说明](http://groovy-lang.org/processing-xml.html#_gpath)
+
+官方实例演示（可使用WireMock进行接口的定义）
+```json
+{
+	"lotto": {
+		"lottoId": 5,
+		"winning-numbers": [2, 45, 34, 23, 7, 5, 3],
+		"winners": [{
+			"winnerId": 23,
+			"numbers": [2, 45, 34, 23, 3, 5]
+		}, {
+			"winnerId": 54,
+			"numbers": [52, 3, 12, 11, 18, 22]
+		}]
+	}
+}
+```
+- 根节点.子节点
+- 索引取值
+- findAll
+- find
 ### XML断言
+GPath也支持XML格式的断言
+
+官方实例演示（可使用WireMock进行接口的定义）
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+
+<shopping> 
+  <category type="groceries"> 
+    <item> 
+      <name>Chocolate</name>  
+      <price>10</price> 
+    </item>  
+    <item> 
+      <name>Coffee</name>  
+      <price>20</price> 
+    </item> 
+  </category>  
+  <category type="supplies"> 
+    <item> 
+      <name>Paper</name>  
+      <price>5</price> 
+    </item>  
+    <item quantity="4"> 
+      <name>Pens</name>  
+      <price>15</price> 
+    </item> 
+  </category>  
+  <category type="present"> 
+    <item when="Aug 10"> 
+      <name>Kathryn's Birthday</name>  
+      <price>200</price> 
+    </item> 
+  </category> 
+</shopping>
+```
+- 索引
+- size()
+- it.@type、it.price：在 xml中 断言中，可以利用 it. 属性或节点的值来作为筛选条件
+- `**.findAll`：对于xml中有一个特别的语法，**.findAll，可以直接忽略前面的节点，直接对筛选条件进行匹配
+
 ### JsonSchema断言
 [JsonSchema官方文档](https://json-schema.org/understanding-json-schema/)
 
@@ -204,6 +267,10 @@ then().body() 可以对响应结果进行断言，在 body 中写入断言：
 1. 首先要借助于Json schema tool的网站https://www.jsonschema.net/，将返回json字符串复制到页面左边，然后点击INFER SHCEMA,就会自动转换为schema json文件类型,会将每个地段的返回值类型都设置一个默认类型; 在pattern中也可以写正则进行匹配 
 2. 点击“设置”按钮会出现各个类型返回值更详细的断言设置，这个就是schema最常用也是最实用的功能，也可以对每种类型的字段最更细化的区间值校验或者断言，例如长度，取值范围等，具体感兴趣的话可以从官网学习深入学习；平常对重要字段的校验我通常会选用其他断言，比如hamcrest断言 
 3. 选择复制功能，可以将生成的schema模板保存下来 
+
+rest-assured结合使用
+4. 添加maven依赖，在rest-assured完成支持
+5. 使用matchesJsonSchemaInClasspath方法对响应结果进行schema断言
 
 #### rest-assured结合使用
 添加maven依赖，在rest-assured完成支持
@@ -224,4 +291,13 @@ extract是我们获取返回值的核心，通过它来指明后面需要获取�
 利用extract().asString()先将响应结果以json字符串的形式保存下来，再一一根据需要获取
 
 #### extract().response()
-利用extract().response()来讲所有的response信息都保存成一个Response对象
+利用extract().response()来讲所有的response信息都保存成一个Response对象，然后在利用各种Response.get方法来获取：
+- 获取所有的Headers：response.getHeaders()
+- 获取某一个header值：response.getHeader("Content-Type")
+- 获取status line：response.getStatusLine()
+- 获取status code：response.getStatusCode()
+- 获取cookies： response.getCookies()、response.getCookie("cookieName")
+
+
+## 实战
+使用WireMock搭建需要测试的接口

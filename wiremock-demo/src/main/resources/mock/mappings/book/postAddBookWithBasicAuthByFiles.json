@@ -24,6 +24,9 @@
   },
   "response": {
     "status": 200,
-    "body": "add book with bodyPatterns successfully"
+    "bodyFileName": "book/bookDetails.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
   }
 }

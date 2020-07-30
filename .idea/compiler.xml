@@ -10,6 +10,7 @@
         <module name="rest-assured-demo" />
         <module name="mustache-demo" />
         <module name="json-demo" />
+        <module name="groovy-test-demo" />
         <module name="extent-report-demo" />
         <module name="mybatis-demo" />
       </profile>

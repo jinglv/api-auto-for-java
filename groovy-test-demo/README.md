@@ -1,0 +1,22 @@
+# Groovy学习
+[Groovy官方文档](http://groovy-lang.org)
+## Groovy基础知识
+- Groovy 语法
+- Groovy 闭包
+- Groovy 集合处理
+- Groovy 操作数据库
+- Groovy 文件操作
+- Groovy 脚本文件
+
+### Groovy 语法
+列举了 9 个 Groovy语法上的特点
+
+1. 代码结尾处无需使用";"
+2. 可以不用显示定义数据类型，所有数据类型都可以用 def 定义
+3. 方法返回值前无需添加 return 关键字，如果方法不用 void 修饰，方法内的最后一行返回值即函数的返回值
+4. 可以指定方法中参数默认值，方法中的参数可以不指定数据类型
+5. 所有方法默认都是 public，无需添加 public 关键字
+6. 方法的()可以取消
+7. Gstring：字符串中支持变量解析和换行处理
+8 任何对象都可以被强制转换为布尔值，任何为 null、void 的对象，等同于 0 或空值都会解析为 false，反之则为 true
+9. Groovy 中的“ == ”是 Java 中的 equal，如果需要判断两个对象值是否相等使用“==”

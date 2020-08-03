@@ -2,6 +2,8 @@
 
 # Rest-Assured
 [rest-assured官方文档](https://github.com/rest-assured/rest-assured/wiki/Usage)
+[rest-assured中文参考文档](https://testerhome.com/topics/7060)
+
 ## Rest-Assured介绍
 Rest-Assured 是一个测试 RESTful Web Services 的 Java 类库。可以使用 Rest-Assured 编写高度自定义化的 HTTP 请求用来测试各种各样 Restful 服务组合的业务实现。
 
@@ -298,6 +300,97 @@ extract是我们获取返回值的核心，通过它来指明后面需要获取�
 - 获取status code：response.getStatusCode()
 - 获取cookies： response.getCookies()、response.getCookie("cookieName")
 
+## 接口加解密处理
+### base64加解密过程
+- 原始内容 -> 加密内容
+- 加密内容 -> internet -> response -> client
+- client -> filter -> 解密内容
+- body正常断言
 
-## 实战
-使用WireMock搭建需要测试的接口
+### Filter机制
+#### rest_assured的Filter
+过滤器会在请求实际发起之前侦测和改变该请求的内容，也可以在响应体实际返回之前拦截并改变。您可以将其理解为AOP中的around advice（译者注：可以自行搜索切片编程）。过滤器也可以用在认证scheme、session管理、日志中。创建一个过滤器需要实现io.restassured.filter.Filter接口。
+
+rest-assured提供了几个过滤器：
+1. io.restassured.filter.log.RequestLoggingFilter: 可以打印出请求模式的细节。
+2. io.restassured.filter.log.ResponseLoggingFilter: 可以打印响应信息的细节如果响应体的状态码匹配given方法的参数。
+3. io.restassured.filter.log.ErrorLoggingFilter: 如果发生了异常（状态码在400和500之间），过滤器将会打印响应的内容。
+
+#### 利用filter机制实现自动解密
+- filter可以应用于所有全局请求
+- request处理
+    - 记录所有的request数据
+    - 自动填充token
+- response处理
+    - 重新构建新的response
+    - filter((req,res,ctx))->{//重新生成response}
+    - new ResponseBuilder().clone(originalResponse)
+
+#### 修改request
+- 可以修改请求内容
+    - 自动带上cookie
+- 通用的请求数据记录
+    - 记录所有的请求和响应
+    
+
+#### 修改response
+```
+@Test
+public void testFilterResponse() {
+    given().log.all()
+        .filter((req,res,ctx) -> {
+            //code
+            //filter request
+            System.out.println(req.getURI());
+            req.header(a,b);
+            // request real
+            // 返回的Response不具备set方法，无法修改body
+            Response resOrigin = ctx.next(req, res);
+            //resposne real
+            //filter response
+            System.out.println(resOrigin.boday().asString());
+            // 解密过程
+            String raw = new String(
+                    Base64.getDecoder().decode(
+                        resOrigin.boday().asString().trim();
+                    )
+
+            // 响应构造器，ResponseBuilder的作用主要是在Response的基础上建设出来一个新的可以修改的body对象
+            ResposneBuilder resBuilder = new ResposneBuilder().clone(resOrigin);
+            //Resposne无法直接修改body，所有间接的通过ResponseBuilder构建
+            resBuilder.setBody(raw);
+            //return new resposne
+            //ResponseBuilder在最后通过build方法直接创建一个用于返回的不可修改的Response
+            return resBuilder.build();
+        })
+    .when()
+        .get("http://xxxx:xxx/xxxx/xx").prettyPeek()
+    .then()
+        .statusCode(200);
+}
+```
+
+#### Session Filter
+- sessionIdName
+- sessionId
+- session filter可以自动从请求中提取sessionId，并在以后的请求中再附带进cookie发送出去
+```
+@Test
+public void testJenkinsLogin(){
+    RestAssured.confg = RestAssured.config().sessionConfig(
+            new SessionConfig().sessionIdName("JSESSIONID.86912bdc"));
+    SessionFilter sessionFilter = new SessionFilter();
+
+    given().log().all()
+            .filter(sessionFilter)
+            .queryParam("j_password", "xxxx")
+            .queryParam("Submit", "xxxx")
+            .queryParam("j_username", "xxx")
+            .when().post("http://xxxx:xxx/xxxx/xx")
+            .then()
+            .statusCode(302);
+    given().log().all().filter(sessionFilter)
+            .when().get("http://xxxx:xxx/xxxx/xx").prettyPeek()
+            .then().statusCode(200);
+}
+```

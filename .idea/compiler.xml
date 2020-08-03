@@ -13,6 +13,7 @@
         <module name="groovy-test-demo" />
         <module name="extent-report-demo" />
         <module name="mybatis-demo" />
+        <module name="jsonpath-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

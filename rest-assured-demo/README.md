@@ -300,6 +300,7 @@ extract是我们获取返回值的核心，通过它来指明后面需要获取�
 - 获取status code：response.getStatusCode()
 - 获取cookies： response.getCookies()、response.getCookie("cookieName")
 
+
 ## 接口加解密处理
 ### base64加解密过程
 - 原始内容 -> 加密内容
@@ -337,27 +338,22 @@ rest-assured提供了几个过滤器：
 ```
 @Test
 public void testFilterResponse() {
-    given().log.all()
+    given().log().all()
         .filter((req,res,ctx) -> {
             //code
             //filter request
             System.out.println(req.getURI());
-            req.header(a,b);
             // request real
             // 返回的Response不具备set方法，无法修改body
             Response resOrigin = ctx.next(req, res);
             //resposne real
             //filter response
-            System.out.println(resOrigin.boday().asString());
+            System.out.println(resOrigin.body().asString());
             // 解密过程
-            String raw = new String(
-                    Base64.getDecoder().decode(
-                        resOrigin.boday().asString().trim();
-                    )
-
+            String raw = new String(Base64.getDecoder().decode(resOrigin.body().asString().trim());
             // 响应构造器，ResponseBuilder的作用主要是在Response的基础上建设出来一个新的可以修改的body对象
-            ResposneBuilder resBuilder = new ResposneBuilder().clone(resOrigin);
-            //Resposne无法直接修改body，所有间接的通过ResponseBuilder构建
+            ResponseBuilder resBuilder = new ResponseBuilder().clone(resOrigin);
+            //Response无法直接修改body，所有间接的通过ResponseBuilder构建
             resBuilder.setBody(raw);
             //return new resposne
             //ResponseBuilder在最后通过build方法直接创建一个用于返回的不可修改的Response

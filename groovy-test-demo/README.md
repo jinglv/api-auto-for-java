@@ -1,5 +1,6 @@
 # Groovy学习
 [Groovy官方文档](http://groovy-lang.org)
+
 ## Groovy基础知识
 - Groovy 语法
 - Groovy 闭包
@@ -20,3 +21,11 @@
 7. Gstring：字符串中支持变量解析和换行处理
 8 任何对象都可以被强制转换为布尔值，任何为 null、void 的对象，等同于 0 或空值都会解析为 false，反之则为 true
 9. Groovy 中的“ == ”是 Java 中的 equal，如果需要判断两个对象值是否相等使用“==”
+
+### Groovy闭包
+Groovy 官方对闭包的定义是“闭包是一个匿名代码块，可接受参数，返回值并可分配给变量”，闭包使用{},{clouserParameter->statement}，clouserParameter指闭包接受的参数，多个参数用逗号隔开，statement指闭包中的代码。
+
+数据集处理就用到了闭包，例如 Groovy 语言自带的 find，findAll 等方法就是闭包
+
+### 数据集处理
+接口测试中有大量对JSON对象解析的场景，要掌握好这个首先得学习Groovy中数据集的处理

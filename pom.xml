@@ -16,6 +16,7 @@
         <module>extent-report-demo</module>
         <module>mybatis-demo</module>
         <module>groovy-test-demo</module>
+        <module>jsonpath-demo</module>
     </modules>
 
     <build>

@@ -29,3 +29,15 @@ Groovy 官方对闭包的定义是“闭包是一个匿名代码块，可接受�
 
 ### 数据集处理
 接口测试中有大量对JSON对象解析的场景，要掌握好这个首先得学习Groovy中数据集的处理
+
+### Groovy操作数据库
+- DataSources 负责数据库的连接
+- ConstantSql 存放 SQL 常量
+- DataRepository 存放操作数据库的方法
+
+### Groovy操作文件
+- 读取写入 TXT 文件
+- 读取 yml 文件
+- 读取 CSV 文件
+- 读取 JSON 文件
+- 读取 XML 文件

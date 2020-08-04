@@ -3,22 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4cabead3-ff37-46bf-8c3d-1f9ba3e2a8bc" name="Default Changelist" comment="xiang'mu">
       <change afterPath="$PROJECT_DIR$/../accounting-platform/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/api/TestGetBookDetails.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/BaseDemo.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/ClosureDemo.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/DataHandleDemo.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsonpath-demo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsonpath-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsonpath-demo/src/main/java/com/test/utils/JsonPathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsonpath-demo/src/main/resources/boo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsonpath-demo/src/test/java/com/test/utils/JsonPathUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/main/java/com/test/utils/JsonPathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/TestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/filter/TestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/book/bookDetailsEncryption.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/encryption/getBookDetails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/DBOptionsDemo.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/db/ConstantSql.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/db/DataRepository.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/db/DataSources.groovy" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-demo/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/config/SwaggerConfiguration.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/enums/ApiCodeEnum.java" afterDir="false" />
@@ -45,16 +33,18 @@
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit5-demo/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/testng-demo/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/xUnit-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/aggregated_report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/src/test/groovy/com/test/groovy/Demo01.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/Demo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/surefire-reports/TEST-com.test.api.TestGetBook.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/surefire-reports/com.test.api.TestGetBook.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/wiremock-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" afterDir="false" />
@@ -115,8 +105,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.6.1/conf/settings.xml" />
+        <option name="localRepository" value="$USER_HOME$/mavenRepository" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.5.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -146,7 +137,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -176,7 +167,7 @@
       <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestGetBookDetails.should book's price response">
+  <component name="RunManager" selected="JUnit.DBOptionsDemo">
     <configuration name="WireMockApplciation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.WireMockApplciation" />
       <module name="wiremock-demo" />
@@ -190,7 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosureDemo.testFuncation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DBOptionsDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-test-demo" />
       <extension name="coverage">
         <pattern>
@@ -199,9 +190,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test.groovy" />
-      <option name="MAIN_CLASS_NAME" value="com.test.groovy.ClosureDemo" />
-      <option name="METHOD_NAME" value="testFuncation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.test.groovy.DBOptionsDemo" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DBOptionsDemo" />
         <item itemvalue="JUnit.TestGetBookDetails.should book's price response" />
         <item itemvalue="Application.WireMockApplciation" />
         <item itemvalue="JUnit.DataHandleDemo.testFind" />
         <item itemvalue="JUnit.DataHandleDemo.testEach" />
-        <item itemvalue="JUnit.ClosureDemo.testFuncation" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +272,8 @@
       <workItem from="1596104991048" duration="482000" />
       <workItem from="1596344595909" duration="902000" />
       <workItem from="1596439545335" duration="228000" />
-      <workItem from="1596442059378" duration="3354000" />
+      <workItem from="1596442059378" duration="3745000" />
+      <workItem from="1596531247928" duration="1725000" />
     </task>
     <task id="LOCAL-00001" summary="pom调整">
       <created>1593678279065</created>
@@ -298,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595934407005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="perf:增加学习笔记&#10;1.rest-assured测试接口&#10;2.jsonpath学习模块&#10;3.groovy的学习笔记">
+      <created>1596446907705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596446907705</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +305,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom调整" />
     <MESSAGE value="[add]rest-assured学习笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]rest-assured学习笔记" />
+    <MESSAGE value="perf:增加学习笔记&#10;1.rest-assured测试接口&#10;2.jsonpath学习模块&#10;3.groovy的学习笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="perf:增加学习笔记&#10;1.rest-assured测试接口&#10;2.jsonpath学习模块&#10;3.groovy的学习笔记" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596101623946">
@@ -318,51 +317,55 @@
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="533" y="140" key="#com.intellij.ide.util.MemberChooser/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593588246048" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1595934406685">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1596446906926">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="307" y="23" key="CommitChangelistDialog2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678278897" />
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1595934406685" />
-    <state width="1396" height="213" key="GridCell.Tab.0.bottom" timestamp="1596446512131">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446906926" />
+    <state width="1396" height="396" key="GridCell.Tab.0.bottom" timestamp="1596532272986">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915408" />
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1595926324083" />
-    <state width="1396" height="213" key="GridCell.Tab.0.bottom/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446512131" />
+    <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926174" />
     <state width="1396" height="256" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505163" />
     <state width="1396" height="256" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596436655040" />
-    <state width="1396" height="213" key="GridCell.Tab.0.center" timestamp="1596446512130">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1396" height="396" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596532272986" />
+    <state width="1396" height="396" key="GridCell.Tab.0.center" timestamp="1596532272985">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
-    <state width="1396" height="213" key="GridCell.Tab.0.center/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446512130" />
+    <state width="1396" height="215" key="GridCell.Tab.0.center/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
     <state width="1396" height="256" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505163" />
     <state width="1396" height="256" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
     <state width="1396" height="215" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596436655039" />
-    <state width="1396" height="213" key="GridCell.Tab.0.left" timestamp="1596446512129">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1396" height="396" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596532272985" />
+    <state width="1396" height="396" key="GridCell.Tab.0.left" timestamp="1596532272984">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
-    <state width="1396" height="213" key="GridCell.Tab.0.left/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446512129" />
+    <state width="1396" height="215" key="GridCell.Tab.0.left/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926172" />
     <state width="1396" height="256" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505162" />
     <state width="1396" height="256" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1596096762160" />
     <state width="1396" height="215" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596436655038" />
-    <state width="1396" height="213" key="GridCell.Tab.0.right" timestamp="1596446512130">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state width="1396" height="396" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596532272984" />
+    <state width="1396" height="396" key="GridCell.Tab.0.right" timestamp="1596532272986">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915407" />
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
-    <state width="1396" height="213" key="GridCell.Tab.0.right/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446512130" />
+    <state width="1396" height="215" key="GridCell.Tab.0.right/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
     <state width="1396" height="256" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505163" />
     <state width="1396" height="256" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
     <state width="1396" height="215" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596436655039" />
+    <state width="1396" height="396" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596532272986" />
     <state x="258" y="88" key="Maven.ArtifactSearchDialog" timestamp="1593592601963">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
@@ -373,18 +376,19 @@
     <state x="483" y="135" key="RollbackChangesDialog/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678252493" />
     <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101771714" />
     <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812@0.23.1440.812" timestamp="1596096467106" />
-    <state x="229" y="23" key="SettingsEditor" timestamp="1596424421791">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="229" y="23" key="SettingsEditor" timestamp="1596531983378">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="229" y="65" key="SettingsEditor/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676526735" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.808@0.23.1440.808" timestamp="1596344634963" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.812@0.23.1440.812" timestamp="1596097054431" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596424421791" />
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1595934442906">
+    <state x="229" y="23" key="SettingsEditor/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596531983378" />
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1596446909831">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678282841" />
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1595934442906" />
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446909831" />
     <state x="499" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596433286149">
       <screen x="0" y="23" width="1440" height="814" />
     </state>

@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.test.api.TestGetBook
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.254 s <<< FAILURE! - in com.test.api.TestGetBook
-should call mock api successfully(com.test.api.TestGetBook)  Time elapsed: 0.078 s  <<< ERROR!
-java.lang.AbstractMethodError
-	at com.test.api.TestGetBook.should call mock api successfully(TestGetBook.groovy:18)
-

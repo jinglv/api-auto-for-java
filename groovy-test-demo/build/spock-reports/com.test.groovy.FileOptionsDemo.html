@@ -244,14 +244,14 @@ div.footer {
 </style>
 </head>
 <body>
-<h2>Report for com.test.groovy.DBOptionsDemo</h2>
+<h2>Report for com.test.groovy.FileOptionsDemo</h2>
 <hr></hr>
 <div class='back-link'>
 <a href='index.html'>&lt;&lt; Back</a>
 </div>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Wed Aug 05 15:18:35 CST 2020 by apple</div>
+<div class='date-test-ran'>Created on Wed Aug 05 15:14:12 CST 2020 by apple</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -263,12 +263,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
-<td>4</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100.0%</td>
-<td>0.863 seconds</td>
+<td>0.236 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -282,22 +282,25 @@ div.footer {
 <tbody>
 <ul id='toc'>
 <li>
-<a href='#1491150171' class='feature-toc-pass'>should get user info successfully</a>
+<a href='#450453449' class='feature-toc-ignored'>create and read txt file</a>
 </li>
 <li>
-<a href='#979303825' class='feature-toc-pass'>should get user address successfully</a>
+<a href='#-116873202' class='feature-toc-pass'>read yml file</a>
 </li>
 <li>
-<a href='#-650238096' class='feature-toc-pass'>should add user successfully</a>
+<a href='#1512351392' class='feature-toc-ignored'>read csv file</a>
 </li>
 <li>
-<a href='#1736376413' class='feature-toc-pass'>should update address successfully</a>
+<a href='#121750442' class='feature-toc-ignored'>read json file</a>
+</li>
+<li>
+<a href='#-1859683537' class='feature-toc-ignored'>read xml file</a>
 </li>
 </ul>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='1491150171'>
-<span>should get user info successfully</span>
+<div class='feature-description ignored' id='450453449'>
+<span>create and read txt file</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -309,7 +312,7 @@ div.footer {
 <div class='block-kind'>Given:</div>
 </td>
 <td>
-<div class='block-text'>no given</div>
+<div class='block-text'>create txt file</div>
 </td>
 </tr>
 <tr>
@@ -317,7 +320,7 @@ div.footer {
 <div class='block-kind'>When:</div>
 </td>
 <td>
-<div class='block-text'>query user table to get info</div>
+<div class='block-text'>write some context to the file</div>
 </td>
 </tr>
 <tr>
@@ -325,13 +328,21 @@ div.footer {
 <div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='block-text'>should get user info</div>
+<div class='block-text'>print file content</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>And:</div>
+</td>
+<td>
+<div class='block-text'>delete file</div>
 </td>
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='979303825'>
-<span>should get user address successfully</span>
+<div class='feature-description' id='-116873202'>
+<span>read yml file</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -343,7 +354,7 @@ div.footer {
 <div class='block-kind'>Given:</div>
 </td>
 <td>
-<div class='block-text'>no given</div>
+<div class='block-text'>read yml file</div>
 </td>
 </tr>
 <tr>
@@ -351,7 +362,7 @@ div.footer {
 <div class='block-kind'>When:</div>
 </td>
 <td>
-<div class='block-text'>query user and address table</div>
+<div class='block-text'>get the yml data</div>
 </td>
 </tr>
 <tr>
@@ -359,12 +370,56 @@ div.footer {
 <div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='block-text'>should get correct user address info</div>
+<div class='block-text'>print data</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='1512351392'>
+<span>read csv file</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
 </td>
 </tr>
 <tr>
 <td>
-<div class='block-kind'>Where:</div>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>read csv file</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>get the csv file data</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>println the data</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description ignored' id='121750442'>
+<span>read json file</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
 </td>
 <td>
 <div class='block-text'>----</div>
@@ -372,48 +427,24 @@ div.footer {
 </tr>
 <tr>
 <td>
-<div class='block-kind'>Examples:</div>
+<div class='block-kind'>When:</div>
 </td>
 <td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>userName</th>
-<th class='ex-header'>address</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>TOM</td>
-<td class='ex-value'>chengdu</td>
-<td class='ex-result'>OK</td>
+<div class='block-text'>get json file data</div>
+</td>
 </tr>
-<tr class='ex-pass'>
-<td class='ex-value'>DONE</td>
-<td class='ex-value'>beijing</td>
-<td class='ex-result'>OK</td>
-</tr>
-<tr class='ex-pass'>
-<td class='ex-value'>ECHO</td>
-<td class='ex-value'>shanghai</td>
-<td class='ex-result'>OK</td>
-</tr>
-<tr class='ex-pass'>
-<td class='ex-value'>MARY</td>
-<td class='ex-value'>hangzhou</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='spec-status'>4/4 passed</div>
+<div class='block-text'>println the data</div>
 </td>
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description' id='-650238096'>
-<span>should add user successfully</span>
+<div class='feature-description ignored' id='-1859683537'>
+<span>read xml file</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
 </span>
@@ -425,7 +456,7 @@ div.footer {
 <div class='block-kind'>Given:</div>
 </td>
 <td>
-<div class='block-text'>no given</div>
+<div class='block-text'>----</div>
 </td>
 </tr>
 <tr>
@@ -433,7 +464,7 @@ div.footer {
 <div class='block-kind'>When:</div>
 </td>
 <td>
-<div class='block-text'>add user</div>
+<div class='block-text'>read xml file</div>
 </td>
 </tr>
 <tr>
@@ -441,107 +472,7 @@ div.footer {
 <div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='block-text'>should get added user successfully</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>userName</th>
-<th class='ex-header'>age</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>Dave</td>
-<td class='ex-value'>88</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-<td>
-<div class='spec-status'>1/1 passed</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='feature-description' id='1736376413'>
-<span>should update address successfully</span>
-<span style='float: right; font-size: 60%;'>
-<a href='#toc'>Return</a>
-</span>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Given:</div>
-</td>
-<td>
-<div class='block-text'>no given</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>When:</div>
-</td>
-<td>
-<div class='block-text'>update user's address</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Then:</div>
-</td>
-<td>
-<div class='block-text'>should update address successfully</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Where:</div>
-</td>
-<td>
-<div class='block-text'>----</div>
-</td>
-</tr>
-<tr>
-<td>
-<div class='block-kind'>Examples:</div>
-</td>
-<td>
-<div class='spec-examples'>
-<table class='ex-table'>
-<thead>
-<th class='ex-header'>userName</th>
-<th class='ex-header'>age</th>
-</thead>
-<tbody>
-<tr class='ex-pass'>
-<td class='ex-value'>MARY</td>
-<td class='ex-value'>55</td>
-<td class='ex-result'>OK</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-<td>
-<div class='spec-status'>1/1 passed</div>
+<div class='block-text'>println the data</div>
 </td>
 </tr>
 </tbody>

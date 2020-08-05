@@ -1,4 +1,4 @@
-package com.test.groovy.db
+package com.test.db
 
 /**
  * 负责执行 SQL

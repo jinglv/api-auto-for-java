@@ -1,4 +1,4 @@
-package com.test.groovy.db
+package com.test.db
 
 /**
  * 包含增删该查 SQL

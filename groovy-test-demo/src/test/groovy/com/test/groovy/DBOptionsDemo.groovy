@@ -1,6 +1,6 @@
 package com.test.groovy
 
-import com.test.groovy.db.DataRepository
+import com.test.db.DataRepository
 import org.junit.Assert
 import spock.lang.Specification
 

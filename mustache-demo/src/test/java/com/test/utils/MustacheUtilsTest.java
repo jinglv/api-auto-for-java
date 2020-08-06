@@ -12,7 +12,7 @@ import java.util.Date;
 
 /**
  * @author jingLv
- * @date 2020-08-05 3:34 下午
+ * @date 2020/08/05
  */
 class MustacheUtilsTest {
 

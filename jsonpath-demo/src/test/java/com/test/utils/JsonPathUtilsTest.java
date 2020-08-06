@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @author jingLv
- * @date 2020-08-03 1:41 下午
+ * @date 2020/08/03
  */
 class JsonPathUtilsTest {
     private static String jsonStr = "{\n" +

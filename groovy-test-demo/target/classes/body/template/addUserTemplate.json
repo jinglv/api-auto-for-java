@@ -1,0 +1,22 @@
+{
+  "name": "TOM",
+  "age": 10,
+  "contacts": [
+    {
+      "city": "$addUserBody.mainContact.city",
+      "street": "$addUserBody.mainContact.street",
+      "phone": "$addUserBody.mainContact.phone"
+    },
+    {
+      "city": "$addUserBody.backupContact.city",
+      "street": "$addUserBody.backupContact.street",
+      "phone": "$addUserBody.backupContact.phone"
+    }
+  ],
+  "background": {
+    "degree": "$addUserBody.backGround.degree",
+    "educate school": "$addUserBody.backGround.school",
+    "graduate Date": "$addUserBody.backGround.date"
+  },
+  "others description": "any comment"
+}

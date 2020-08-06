@@ -41,3 +41,48 @@ Groovy 官方对闭包的定义是“闭包是一个匿名代码块，可接受�
 - 读取 CSV 文件
 - 读取 JSON 文件
 - 读取 XML 文件
+
+# 接口Request body管理
+有两种方式：
+- 方式一：直接通过文件方式管理 Reqeust Body
+    - 通过文件管理 Request Body 的实现方式，一个接口用了一个文件来存放Request Body，似乎没什么问题，接下来我们看看这样的测试场景
+- 方式二：通过 velocity 管理 Request Body
+    1. 引入velocity包
+    2. 通过 velocity 将数据对象与模板文件进行 merge
+    3. 定义json模板
+        ```
+       {
+         "name": "TOM",
+         "age": 10,
+         "contacts": [
+           #if ($addUserBody.ifAddMainContact)     // #If...#end表示如果条件为true，那么在body merge中就有此内容，反之则无这段内容。通过这些设置可以根据需要动态组合构造出来的reqeust body
+           {
+             "city": $addUserBody.mainContact.city,  // 所有以$开头的都是后续可以参数化的内容
+             "street": $addUserBody.mainContact.street,
+             "phone": $addUserBody.mainContact.phone
+           }
+          #end
+          #if($addUserBody.ifAddBackupContact)
+         ,
+            {
+            "city": $addUserBody.backupContact.city,
+            "street": $addUserBody.backupContact.street,
+            "phone": $addUserBody.backupContact.phone
+            }
+         #end
+         ]
+         #if ($addUserBody.ifAddBackGround)
+         "background": {
+           "degree": $addUserBody.backGround.degree,
+           "educate school": $addUserBody.backGround.school,
+           "graduate Date": $addUserBody.backGround.date
+         }
+         #end
+         #if ($addUserBody.ifAddOtherInfo)
+         ,
+         "others description": "any comment"
+         #end
+       }
+        ```
+    4. 构建对象
+    5. 进行测试

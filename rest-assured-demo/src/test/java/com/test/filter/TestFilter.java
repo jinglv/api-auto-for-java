@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author jingLv
- * @date 2020-08-03 11:19 上午
+ * @date 2020/08/03
  */
 public class TestFilter {
     /**

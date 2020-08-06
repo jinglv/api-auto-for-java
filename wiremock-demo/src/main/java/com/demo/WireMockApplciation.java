@@ -10,7 +10,7 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMoc
  * WireMock启动
  *
  * @author jingLv
- * @date 2020-07-01 2:33 下午
+ * @date 2020/07/01
  */
 public class WireMockApplciation {
 

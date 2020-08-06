@@ -4,7 +4,7 @@ import com.jayway.jsonpath.JsonPath;
 
 /**
  * @author jingLv
- * @date 2020-08-03 1:21 下午
+ * @date 2020/08/03
  */
 public class JsonPathUtils {
     /**

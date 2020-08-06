@@ -9,7 +9,7 @@ import java.io.StringWriter;
 
 /**
  * @author jingLv
- * @date 2020-04-15 10:28 AM
+ * @date 2020/04/15
  */
 public class MustacheUtils {
     private final String path;

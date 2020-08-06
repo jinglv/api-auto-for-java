@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 /**
  * @author jingLv
- * @date 2020-07-28 4:56 下午
+ * @date 2020/07/28
  */
 public class TestXml {
 

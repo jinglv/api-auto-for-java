@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * @author jingLv
- * @date 2020-04-14 10:52 PM
+ * @date 2020/04/14
  */
 @Data
 public class Todo {

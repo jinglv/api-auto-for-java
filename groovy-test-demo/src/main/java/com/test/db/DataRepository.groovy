@@ -3,7 +3,7 @@ package com.test.db
 /**
  * 负责执行 SQL
  *
- * @author jingLv* @date 2020-08-04 5:06 下午
+ * @author jingLv* @date 2020/08/04
  *
  */
 class DataRepository extends DataSources {

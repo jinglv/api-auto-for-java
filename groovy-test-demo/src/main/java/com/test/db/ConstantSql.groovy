@@ -3,7 +3,7 @@ package com.test.db
 /**
  * 包含增删该查 SQL
  *
- * @author jingLv* @date 2020-08-04 5:02 下午
+ * @author jingLv* @date 2020/08/04
  *
  */
 class ConstantSql {

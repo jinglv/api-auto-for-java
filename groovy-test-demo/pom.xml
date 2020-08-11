@@ -37,6 +37,12 @@
             <version>${rest-assured.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
         <!--引入该包后才能使用spock（ Groovy 自带的BDD框架）-->
         <dependency>
             <groupId>org.spockframework</groupId>

@@ -86,3 +86,7 @@ Groovy 官方对闭包的定义是“闭包是一个匿名代码块，可接受�
         ```
     4. 构建对象
     5. 进行测试
+    
+# 接口Response Body验证
+## Response Body 校验
+REST Assured提供了多种对Response Body校验的方式，这里会重点讲解“获取Response Body的string值，接着通过JsonSlurp或者XmlSlurp转换为数据集，然后进行校验的方式。

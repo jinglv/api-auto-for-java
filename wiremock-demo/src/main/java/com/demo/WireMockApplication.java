@@ -12,7 +12,7 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMoc
  * @author jingLv
  * @date 2020/07/01
  */
-public class WireMockApplciation {
+public class WireMockApplication {
 
     /**
      * 定义mock服务的端口

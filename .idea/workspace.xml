@@ -21,14 +21,44 @@
   <component name="ChangeListManager">
     <list default="true" id="4cabead3-ff37-46bf-8c3d-1f9ba3e2a8bc" name="Default Changelist" comment="xiang'mu">
       <change afterPath="$PROJECT_DIR$/../accounting-platform/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/pojo/AddUserBody.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/request/file/UserClient.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/request/velocity/TemplateService.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/resources/body/addUser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/resources/body/template/addUserTemplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/java/com/test/pojo/AddUserBodyTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/java/com/test/request/file/UserClientTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/user/postAddUserDetails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.response.service.ResumeServiceTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/response/client/ResumeClient.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/response/service/ResumeService.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/src/test/java/com/test/response/service/ResumeServiceTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/client/ResumeClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService$_printIfPersonWithSpecialSkill_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService$_printWorkingDetails_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/response/service/ResumeServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/resume.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/getResume.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/resume.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/getResume.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/accounting-platform-api-test/accounting-platform-api-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/accounting-platform-api-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/client/AssetClient.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/client/RouterClient.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/repository/AddAssetRepository.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/repository/ApproveRouterRepository.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/sql/AddAssetConstantSql.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/sql/ApproveRouterSql.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/resources/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/test/java/com/yuanfeng/capital/api/client/AssetClientTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/test/java/com/yuanfeng/capital/api/client/RouterClientTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/test/java/com/yuanfeng/capital/api/test/AddAssetFlowTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/capital-technology-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/db/ConstantSql.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/db/DataRepository.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/db/DataSources.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/repository/CapitalOperationPlatformRepository.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/utils/FakerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/utils/FileService.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/mars-api-test/mars-api-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../capital-technology-api/mars-api-test/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-demo/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/config/SwaggerConfiguration.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/enums/ApiCodeEnum.java" afterDir="false" />
@@ -55,25 +85,17 @@
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit5-demo/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/testng-demo/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xUnit-demo/xUnit-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-report-demo/src/main/java/com/demo/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/extent-report-demo/src/main/java/com/demo/ExtentTestNGIReporterListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/aggregated_report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.groovy.DBOptionsDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.groovy.DBOptionsDemo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groovy-test-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonpath-demo/src/main/java/com/test/utils/JsonPathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsonpath-demo/src/main/java/com/test/utils/JsonPathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonpath-demo/src/test/java/com/test/utils/JsonPathUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsonpath-demo/src/test/java/com/test/utils/JsonPathUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mustache-demo/src/main/java/com/test/pojo/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mustache-demo/src/main/java/com/test/pojo/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mustache-demo/src/main/java/com/test/utils/MustacheUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mustache-demo/src/main/java/com/test/utils/MustacheUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mustache-demo/src/test/java/com/test/utils/MustacheUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mustache-demo/src/test/java/com/test/utils/MustacheUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/main/java/com/test/utils/JsonPathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/src/main/java/com/test/utils/JsonPathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/TestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/filter/TestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/filter/TestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/json/TestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/json/TestJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/xml/TestXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/xml/TestXml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/TestUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/java/com/demo/WireMockApplciation.java" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/java/com/demo/WireMockApplciation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/db/ConstantSql.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/db/ConstantSql.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/db/DataRepository.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/db/DataRepository.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/db/DataSources.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/src/main/java/com/test/db/DataSources.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/main/java/com/demo/WireMockApplciation.java" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/main/java/com/demo/WireMockApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/classes/com/demo/WireMockApplciation.class" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/com/demo/WireMockApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" afterDir="false" />
@@ -172,29 +194,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.test.response.service" />
       <recent name="com.test.pojo" />
       <recent name="com.test.request.file" />
       <recent name="com.test.utils" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="spock.lang.Specification" />
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mustache-demo/src/main/resources/mustache" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/book" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/encryption" />
-      <recent name="$PROJECT_DIR$/groovy-test-demo/src/test" />
-      <recent name="$PROJECT_DIR$/spring-boot-demo" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.test.pojo" />
-      <recent name="com.test.utils" />
-      <recent name="com.test" />
-      <recent name="com.demo" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -204,10 +210,27 @@
       <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/book" />
       <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test.pojo" />
+      <recent name="com.test.utils" />
+      <recent name="com.test" />
+      <recent name="com.demo" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mustache-demo/src/main/resources/mustache" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/book" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/encryption" />
+      <recent name="$PROJECT_DIR$/groovy-test-demo/src/test" />
+      <recent name="$PROJECT_DIR$/spring-boot-demo" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddUserBodyTest.should add user with inputting contacts and background successfully">
-    <configuration name="WireMockApplciation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.WireMockApplciation" />
+  <component name="RunManager" selected="JUnit.ResumeServiceTest.println language skill if person with it">
+    <configuration name="WireMockApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.WireMockApplication" />
       <module name="wiremock-demo" />
       <extension name="coverage">
         <pattern>
@@ -219,64 +242,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUserBodyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DBOptionsDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-test-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.pojo.*" />
+          <option name="PATTERN" value="com.test.groovy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.test.pojo.AddUserBodyTest" />
+      <option name="PACKAGE_NAME" value="com.test.groovy" />
+      <option name="MAIN_CLASS_NAME" value="com.test.groovy.DBOptionsDemo" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUserBodyTest.should add user with inputting contacts and background successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResumeServiceTest.get all working experience" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-test-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.pojo.*" />
+          <option name="PATTERN" value="com.test.response.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.test.pojo.AddUserBodyTest" />
-      <option name="METHOD_NAME" value="should add user with inputting contacts and background successfully" />
+      <option name="PACKAGE_NAME" value="com.test.response.service" />
+      <option name="MAIN_CLASS_NAME" value="com.test.response.service.ResumeServiceTest" />
+      <option name="METHOD_NAME" value="get all working experience" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUserBodyTest.should add user with inputting main and backup contact successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResumeServiceTest.get contact from resume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-test-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.pojo.*" />
+          <option name="PATTERN" value="com.test.response.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.test.pojo.AddUserBodyTest" />
-      <option name="METHOD_NAME" value="should add user with inputting main and backup contact successfully" />
+      <option name="PACKAGE_NAME" value="com.test.response.service" />
+      <option name="MAIN_CLASS_NAME" value="com.test.response.service.ResumeServiceTest" />
+      <option name="METHOD_NAME" value="get contact from resume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUserBodyTest.should add user with only inputting main contact successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResumeServiceTest.println language skill if person with it" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-test-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.pojo.*" />
+          <option name="PATTERN" value="com.test.response.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.test.pojo.AddUserBodyTest" />
-      <option name="METHOD_NAME" value="should add user with only inputting main contact successfully" />
+      <option name="PACKAGE_NAME" value="com.test.response.service" />
+      <option name="MAIN_CLASS_NAME" value="com.test.response.service.ResumeServiceTest" />
+      <option name="METHOD_NAME" value="println language skill if person with it" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddUserBodyTest.should add user with inputting contacts and background successfully" />
-        <item itemvalue="Application.WireMockApplciation" />
-        <item itemvalue="JUnit.AddUserBodyTest" />
-        <item itemvalue="JUnit.AddUserBodyTest.should add user with inputting main and backup contact successfully" />
-        <item itemvalue="JUnit.AddUserBodyTest.should add user with only inputting main contact successfully" />
+        <item itemvalue="JUnit.ResumeServiceTest.println language skill if person with it" />
+        <item itemvalue="JUnit.ResumeServiceTest.get all working experience" />
+        <item itemvalue="JUnit.ResumeServiceTest.get contact from resume" />
+        <item itemvalue="Application.WireMockApplication" />
+        <item itemvalue="JUnit.DBOptionsDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +338,11 @@
       <workItem from="1596596372316" duration="9122000" />
       <workItem from="1596618636388" duration="202000" />
       <workItem from="1596679323883" duration="4824000" />
-      <workItem from="1596686483550" duration="2327000" />
+      <workItem from="1596686483550" duration="2471000" />
+      <workItem from="1596784987763" duration="2807000" />
+      <workItem from="1597018862239" duration="224000" />
+      <workItem from="1597041673091" duration="8465000" />
+      <workItem from="1597135404126" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="pom调整">
       <created>1593678279065</created>
@@ -352,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596615765138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="perf:增加Groovy脚本测试接口&#10;&#10;1.Groovy编写测试接口脚本&#10;2.调整代码格式">
+      <created>1596694670340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596694670340</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +435,8 @@
     <MESSAGE value="perf:增加学习笔记&#10;1.rest-assured测试接口&#10;2.jsonpath学习模块&#10;3.groovy的学习笔记" />
     <MESSAGE value="perf:Groovy学习笔记" />
     <MESSAGE value="pref:Groovy学习笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="pref:Groovy学习笔记" />
+    <MESSAGE value="perf:增加Groovy脚本测试接口&#10;&#10;1.Groovy编写测试接口脚本&#10;2.调整代码格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="perf:增加Groovy脚本测试接口&#10;&#10;1.Groovy编写测试接口脚本&#10;2.调整代码格式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="115" key="#Inspections" timestamp="1596609197822">
@@ -425,15 +460,16 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="482" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596596620208" />
-    <state x="133" y="23" key="CommitChangelistDialog2" timestamp="1596615764853">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="133" y="23" key="CommitChangelistDialog2" timestamp="1597018903335">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="307" y="23" key="CommitChangelistDialog2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678278897" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446906926" />
-    <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615764853" />
+    <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694669815" />
     <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540544845" />
-    <state width="1396" height="532" key="GridCell.Tab.0.bottom" timestamp="1596686821919">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.820@0.23.1440.820" timestamp="1597018903335" />
+    <state width="1396" height="232" key="GridCell.Tab.0.bottom" timestamp="1597133711654">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915408" />
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
@@ -441,11 +477,12 @@
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926174" />
     <state width="1396" height="256" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505163" />
     <state width="1396" height="256" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
-    <state width="1396" height="283" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596685596867" />
+    <state width="1396" height="532" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694691680" />
     <state width="1396" height="532" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
     <state width="1396" height="396" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540591341" />
-    <state width="1396" height="532" key="GridCell.Tab.0.center" timestamp="1596686821919">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="232" key="GridCell.Tab.0.bottom/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
+    <state width="1396" height="232" key="GridCell.Tab.0.center" timestamp="1597133711654">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
@@ -453,11 +490,12 @@
     <state width="1396" height="215" key="GridCell.Tab.0.center/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
     <state width="1396" height="256" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505163" />
     <state width="1396" height="256" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
-    <state width="1396" height="283" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596685596867" />
+    <state width="1396" height="532" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694691679" />
     <state width="1396" height="532" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
     <state width="1396" height="396" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540591340" />
-    <state width="1396" height="532" key="GridCell.Tab.0.left" timestamp="1596686821918">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="232" key="GridCell.Tab.0.center/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
+    <state width="1396" height="232" key="GridCell.Tab.0.left" timestamp="1597133711653">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
@@ -465,11 +503,12 @@
     <state width="1396" height="215" key="GridCell.Tab.0.left/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926172" />
     <state width="1396" height="256" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505162" />
     <state width="1396" height="256" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1596096762160" />
-    <state width="1396" height="283" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596685596866" />
+    <state width="1396" height="532" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694691678" />
     <state width="1396" height="532" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1596686821918" />
     <state width="1396" height="396" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540591339" />
-    <state width="1396" height="532" key="GridCell.Tab.0.right" timestamp="1596686821919">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="232" key="GridCell.Tab.0.left/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711653" />
+    <state width="1396" height="232" key="GridCell.Tab.0.right" timestamp="1597133711654">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915407" />
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
@@ -477,9 +516,10 @@
     <state width="1396" height="215" key="GridCell.Tab.0.right/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
     <state width="1396" height="256" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101505163" />
     <state width="1396" height="256" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
-    <state width="1396" height="283" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596685596867" />
+    <state width="1396" height="532" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694691679" />
     <state width="1396" height="532" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
     <state width="1396" height="396" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540591341" />
+    <state width="1396" height="232" key="GridCell.Tab.0.right/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="251" key="GridCell.Tab.1.bottom" timestamp="1596615795438">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
@@ -514,25 +554,31 @@
     <state x="229" y="23" key="SettingsEditor/0.23.1440.812@0.23.1440.812" timestamp="1596097054431" />
     <state x="243" y="90" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596618810783" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596531983378" />
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1596615767306">
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1596694672162">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678282841" />
     <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446909831" />
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615767306" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694672162" />
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540547454" />
-    <state x="531" y="271" key="chooseDestDirectoryDialog" timestamp="1596683906511">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="531" y="273" key="chooseDestDirectoryDialog" timestamp="1597042470124">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="531" y="271" key="chooseDestDirectoryDialog/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596683906511" />
-    <state x="499" y="219" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596683906612">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="531" y="273" key="chooseDestDirectoryDialog/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597042470124" />
+    <state x="499" y="220" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597042470206">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="499" y="219" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596683906612" />
+    <state x="499" y="220" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597042470205" />
     <state x="308" y="92" key="editAsTableFormatDialogDimension" timestamp="1596609146281">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="308" y="92" key="editAsTableFormatDialogDimension/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596609146281" />
+    <state x="418" y="159" width="604" height="548" key="find.popup" timestamp="1597047033797">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="418" y="159" width="604" height="548" key="find.popup/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597047033797" />
     <state x="121" y="72" key="new project wizard" timestamp="1596431857854">
       <screen x="0" y="23" width="1440" height="814" />
     </state>

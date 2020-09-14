@@ -1,0 +1,17 @@
+{
+  "request": {
+    "urlPath": "/api/basic/auth",
+    "method": "ANY",
+    "basicAuth": {
+      "username": "admin",
+      "password": "123456"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "code": "000000",
+      "message": "Authentication success!"
+    }
+  }
+}

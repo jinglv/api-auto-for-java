@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/api/getBookByQueryParam/([a-z]*)",
+    "urlPathPattern": "/api/book/param/([a-z]*)",
     "queryParameters": {
       "name": {
         "matches": "[a-z]*"

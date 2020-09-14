@@ -12,7 +12,7 @@
     <artifactId>wiremock-demo</artifactId>
 
     <properties>
-        <wiremock.version>2.24.0</wiremock.version>
+        <wiremock.version>2.27.0</wiremock.version>
     </properties>
 
     <dependencies>
@@ -29,15 +29,15 @@
         </dependency>
 
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.0.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>4.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

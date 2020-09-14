@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/api/json"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "basic/Gpath.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

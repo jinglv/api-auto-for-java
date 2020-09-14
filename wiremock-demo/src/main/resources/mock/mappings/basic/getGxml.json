@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/xml"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "basic/Gxml.xml",
+    "headers": {
+      "Content-Type": "application/xml"
+    }
+  }
+}

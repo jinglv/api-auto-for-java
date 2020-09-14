@@ -1,17 +1,21 @@
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addBookWithBasicAuth/([a-z]*)",
-    "bodyPatterns":[{
-      "matchesJsonPath": "$.books",
-      "matchesJsonPath": "$.comment",
-      "matchesJsonPath": "$.books[?(@.names =~ /Name.*/i)]",
-      "matchesJsonPath": "$..price",
-      "matchesJsonPath": "$..author",
-      "matchesJsonPath": "$..[?(@.price<200)]"
-    }],
+    "urlPathPattern": "/api/book/auth/([a-z]*)",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.books",
+        "matchesJsonPath": "$.comment",
+        "matchesJsonPath": "$.books[?(@.names =~ /Name.*/i)]",
+        "matchesJsonPath": "$..price",
+        "matchesJsonPath": "$..author",
+        "matchesJsonPath": "$..[?(@.price<200)]"
+      }
+    ],
     "headers": {
-      "Content-Type": {"equalTo":"application/json"}
+      "Content-Type": {
+        "equalTo": "application/json"
+      }
     },
     "basicAuth": {
       "username": "apiUsername",

@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addBookWithBasicAuth/([a-z]*)",
+    "urlPathPattern": "/api/book/auth/file/([a-z]*)",
     "bodyPatterns": [
       {
         "matchesJsonPath": "$.books",

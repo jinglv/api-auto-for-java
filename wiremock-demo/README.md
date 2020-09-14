@@ -1,7 +1,57 @@
 # WireMock
-WireMock 是一款开源的 Mock 框架，可以 Mock 基于 HTTP 和 HTTPS 的 API。官网提供了多种搭建 WireMock 的方式，以下讲解的是通过引入 Jar 包方式搭建 WireMock 服务。
+WireMock是一款开源的Mock框架，可以Mock基于HTTP和HTTPS的API。官网提供了多种搭建WireMock的方式，以下讲解的是通过引入Jar包方式搭建WireMock服务。
+
+WireMock 有以下优点：
+- 支持本地单独部署
+- 丰富的匹配策略
+- 支持接口录制
+- 支持场景定义
+- 本身支持 API 调用
+- 提供 Java 库，易于在代码中使用
 
 [WireMock官网](http://wiremock.org)
+
+## WireMock的安装
+官网下载的jar包或者Maven或Gradle项目中添加依赖（具体使用参照官网）
+
+## WireMock命令行用法
+WireMock的独立版本是一个Jar包，所以运行Wiremock自然是需要Java基础环境，命令如下
+```shell
+jingdeMacBook-Pro:2.27.0 apple$ java -jar wiremock-jre8-standalone-2.27.0.jar
+```
+命令行支持的一些主要参数及其作用说明如下：
+- `--port`设置Mock服务的http端口，默认启动在8080端口。如果设置为0，则自动确定端口。
+- `--https-port`设置https的端口。
+- `--verbose`在终端显示详细的日志信息。
+- `--root-dir`设置 mappings 和 __files 目录的工作路径
+- `--enable-browser-proxying`以浏览器代理的方式运行。
+
+简单来说，WireMock会在本地启动一个侦听指定端口的web服务，这里指定的端口可以用--port指定http协议或--https-port指定https协议端口。启动后我们发到指定端口的请求，就会由WireMock来完成响应，达到接口Mock的目的。
+
+命令行启动后如图：
+```shell script
+jingdeMacBook-Pro:2.27.0 apple$ java -jar wiremock-jre8-standalone-2.27.0.jar
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ /$$      /$$ /$$                     /$$      /$$                     /$$
+| $$  /$ | $$|__/                    | $$$    /$$$                    | $$
+| $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$/$$ $$ $$| $$ /$$__  $$ /$$__  $$| $$ $$/$$ $$ /$$__  $$ /$$_____/| $$  /$$/
+| $$$$_  $$$$| $$| $$  \__/| $$$$$$$$| $$  $$$| $$| $$  \ $$| $$      | $$$$$$/
+| $$$/ \  $$$| $$| $$      | $$_____/| $$\  $ | $$| $$  | $$| $$      | $$_  $$
+| $$/   \  $$| $$| $$      |  $$$$$$$| $$ \/  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+|__/     \__/|__/|__/       \_______/|__/     |__/ \______/  \_______/|__/  \__/
+
+port:                         8080
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      false
+```
+启动后，我们在本地运行目录下会看到WireMock会自动生成`__files`和`mappings`两个目录。这两个目录中存放的就是 Mock 模拟的接口匹配内容了。
+- `__files`存放接口响应中会用到的一些文件资源
+- `mappings`存放接口响应匹配规则
 
 ## 模拟 JSON 格式接口
 ### 模拟GET请求
@@ -17,7 +67,7 @@ WireMock 是一款开源的 Mock 框架，可以 Mock 基于 HTTP 和 HTTPS 的 
 {
   "request": {
     "method" : "GET",
-    "urlPattern": "/api/getBook/([a-z]*)"
+    "urlPattern": "/api/book/([a-z]*)"
   },
   "response": {
     "status": 200,
@@ -35,7 +85,7 @@ WireMock 是一款开源的 Mock 框架，可以 Mock 基于 HTTP 和 HTTPS 的 
 {
   "request": {
     "method" : "GET",
-    "urlPathPattern": "/api/getBookByPathPatter/([a-z]*)" 
+    "urlPathPattern": "/api/book/path/([a-z]*)*)" 
   },
   "response": {
     "status": 200,
@@ -53,7 +103,7 @@ WireMock 是一款开源的 Mock 框架，可以 Mock 基于 HTTP 和 HTTPS 的 
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/api/getBookByQueryParam/([a-z]*)",
+    "urlPathPattern": "/api/book/param/([a-z]*)",
     "QueryParameters": {
       "name": {
         "matches": "[a-z]*"
@@ -103,7 +153,7 @@ WireMock 是一款开源的 Mock 框架，可以 Mock 基于 HTTP 和 HTTPS 的 
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addBookWithBodyPatter/([a-z]*)",
+    "urlPathPattern": "/api/book/body/pattern/([a-z]*)",
     "bodyPatterns":[{
       "matchesJsonPath": "$.books",
       "matchesJsonPath": "$.comment",
@@ -130,7 +180,7 @@ WireMock 是一款开源的 Mock 框架，可以 Mock 基于 HTTP 和 HTTPS 的 
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addBookWithBasicAuth/([a-z]*)",
+    "urlPathPattern": "/api/book/auth/([a-z]*)",
     "bodyPatterns":[{
       "matchesJsonPath": "$.books",
       "matchesJsonPath": "$.comment",
@@ -176,7 +226,7 @@ fileName 指在__files录下的文件名称。如下是采用bodyFileName的方�
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addBookWithBasicAuth/([a-z]*)",
+    "urlPathPattern": "/api/book/auth/([a-z]*)",
     "bodyPatterns": [
       {
         "matchesJsonPath": "$.books",
@@ -225,7 +275,7 @@ fileName 指在__files录下的文件名称。如下是采用bodyFileName的方�
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addPersonByXml/([a-z]*)",
+    "urlPathPattern": "/api/user/xml/([a-z]*)",
     "headers": {
       "Content-Type": {
         "equalTo": "application/xml"
@@ -259,7 +309,7 @@ fileName 指在__files录下的文件名称。如下是采用bodyFileName的方�
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addXmlUser/([a-z]*)",
+    "urlPathPattern": "/api/user/add",
     "headers": {
       "Content-Type": {
         "equalTo": "application/xml"

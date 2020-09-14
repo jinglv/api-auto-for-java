@@ -10,7 +10,7 @@
     "bodyPatterns": [
       {
         "matchesXPath": {
-          "expression": "//price/text()",
+          "expression": "/price/text()",
           "contains": "1"
         }
       }

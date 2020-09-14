@@ -45,4 +45,6 @@ string、number（无浮点型）、true、false、null
 ```
 
 ## JSON使用
-[JSON文档](http://json.org/json-zh.html)
+[JSON官方网站](http://json.org/json-zh.html)
+
+## GSON使用

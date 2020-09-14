@@ -1,0 +1,18 @@
+{
+  "request": {
+    "urlPath": "/api/oauth/auth",
+    "method": "ANY",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 123456"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "code": "000000",
+      "message": "Authentication success!"
+    }
+  }
+}

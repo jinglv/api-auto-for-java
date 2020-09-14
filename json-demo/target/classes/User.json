@@ -1,0 +1,14 @@
+{
+  "name": "刘滋滋",
+  "age": 18,
+  "birthday": "1990-01-01",
+  "school": "蓝翔",
+  "major": [
+    "理发",
+    "挖掘机"
+  ],
+  "has_boyfriend": false,
+  "car": null,
+  "house": null,
+  "comment": "这是一个注释"
+}

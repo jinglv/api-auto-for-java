@@ -22,7 +22,7 @@ public class TestFilter {
     //@BeforeAll
     static void before() {
         RestAssured.filters((req, res, ctx) -> {
-                    if (req.getURI().contains("/api/getAllBooks/encryption")) {
+                    if (req.getURI().contains("/api/book/encryption")) {
                         // 返回的Response不具备set方法，无法修改body
                         Response resOrigin = ctx.next(req, res);
                         // 解密过程
@@ -48,7 +48,7 @@ public class TestFilter {
         given().baseUri("http://localhost:9090")
                 .log().all()
                 .when()
-                .get("/api/getAllBooks")
+                .get("/api/book/details")
                 .then()
                 .log().all()
                 .body("books.name[0]", equalTo("西游记"))
@@ -75,7 +75,7 @@ public class TestFilter {
 //                    return resBuilder.build();
 //                })
                 .when()
-                .get("/api/getAllBooks/encryption").prettyPeek()
+                .get("/api/book/encryption").prettyPeek()
                 .then()
                 .log().all()
                 .body("books.name[0]", equalTo("西游记"))
@@ -88,12 +88,14 @@ public class TestFilter {
     @Test
     void testEncryptionResponse() {
         Response response = given().baseUri("http://localhost:9090")
-                .get("/api/getAllBooks/encryption")
+                .get("/api/book/encryption")
                 .then()
+                .log().all()
                 .extract()
                 .response();
         //解密
         String raw = Base64.decodeStr(response.body().asString());
+        System.out.println(raw);
         Object expected = new JsonPathUtils(raw, "$.books[0].name").readJson();
         assertEquals(expected, "西游记");
     }

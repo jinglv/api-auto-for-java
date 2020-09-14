@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "POST",
-    "urlPath": "/api/addUserDetails",
+    "urlPath": "/api/user/add",
     "headers": {
       "Content-Type": {
         "equalTo": "application/json;charset=UTF-8"

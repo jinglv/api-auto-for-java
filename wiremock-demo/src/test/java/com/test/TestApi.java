@@ -1,8 +1,9 @@
 package com.test;
 
-import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.*;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
 
 /**
  * @author jingLv
@@ -11,11 +12,11 @@ import static io.restassured.RestAssured.*;
 public class TestApi {
 
     @Test
-    public void testGetBook(){
+    public void testGetBook() {
         given().
-        when().
+                when().
                 get("http://localhost:9090/api/getBook/abc").
-        then()
+                then()
                 .log().toString();
     }
 }

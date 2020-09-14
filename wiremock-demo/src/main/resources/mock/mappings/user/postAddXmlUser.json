@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "POST",
-    "urlPathPattern": "/api/addXmlUser/([a-z]*)",
+    "urlPathPattern": "/api/user/add/xml/([a-z]*)",
     "headers": {
       "Content-Type": {
         "equalTo": "application/xml"
@@ -10,7 +10,7 @@
     "bodyPatterns": [
       {
         "matchesXPath": {
-          "expression": "//price/text()",
+          "expression": "/price/text()",
           "contains": "1"
         }
       }

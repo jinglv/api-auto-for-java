@@ -41,19 +41,19 @@
     <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
-        <version>3.5.3</version>
+        <version>${mybatis.version}</version>
     </dependency>
 
     <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>8.0.16</version>
+        <version>${mysql.connector.version}</version>
     </dependency>
 
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.12</version>
+        <version>${lombok.version}</version>
     </dependency>
 
 </dependencies>
@@ -68,7 +68,7 @@ import lombok.Data;
 
 /**
  * @author jinglv
- * @date 2020-04-06 14:19
+ * @date 2020/04/06
  */
 @Data
 public class User {
@@ -118,37 +118,44 @@ mybatis-config.xml
 会存在很多个Mapper，每一个 Mapper中都会定义相应的增删改查方法，为了避免方法冲突，也为了便于管理，
 每一个Mapper都有自己的namespace，而且这个namespace不可以重复
 -->
-<mapper namespace="com.test.userMapper">
+<mapper namespace="com.demo.userMapper">
 
-    <select id="getUserById" resultType="com.test.entity.User">
-        select * from user where id=#{id};
+    <select id="getUserById" resultType="com.mybatis.demo.entity.User">
+        select *
+        from user
+        where uid = #{uid};
     </select>
 
-    <select id="getUserAll" resultType="com.test.entity.User">
-        select * from user;
+    <select id="getUserAll" resultType="com.mybatis.demo.entity.User">
+        select *
+        from user;
     </select>
 
-    <insert id="addUser" parameterType="com.test.entity.User"> <!--parameterType 表示传入的参数类型。参数都是通过 # 来引用-->
-        insert into user (username,address) values (#{username},#{address});
+    <insert id="addUser" parameterType="com.mybatis.demo.entity.User"> <!--parameterType 表示传入的参数类型。参数都是通过 # 来引用-->
+        insert into user (uid, username,address) values (#{uid},#{username},#{address});
     </insert>
 
-    <insert id="addUser2" parameterType="com.test.entity.User">
+    <insert id="addUser2" parameterType="com.mybatis.demo.entity.User">
         <selectKey resultType="java.lang.String" keyProperty="id" order="BEFORE">
             select uuid();
         </selectKey>
-        insert into user (id,username,address) values (#{id},#{username},#{address});
+        insert into user (uid,username,address) values (#{uid},#{username},#{address});
     </insert>
 
-    <delete id="deleteUserById" parameterType="java.lang.Integer">
-        delete from user where id=#{id}
+    <delete id="deleteUserByUid" parameterType="java.lang.Integer">
+        delete
+        from user
+        where uid = #{uid}
     </delete>
 
-    <update id="updateUser" parameterType="com.test.entity.User">
-        update user set username = #{username} where id=#{id};
+    <update id="updateUser" parameterType="com.mybatis.demo.entity.User">
+        update user
+        set username = #{username}
+        where uid = #{uid};
     </update>
 </mapper>
 ```
-在 Mapper 中，首先定义一个select ，id表示查询方法的唯一标识符，resultType定义了返回值的类型。在 select 节点中，定义查询 SQL，#{id}，表示这个位置用来接收外部传进来的参数。
+在Mapper中，首先定义一个select ，id表示查询方法的唯一标识符，resultType定义了返回值的类型。在select节点中，定义查询SQL，#{id}，表示这个位置用来接收外部传进来的参数。
 
 ## 运行
 上面步骤准备好后，写一个Main执行方法
@@ -165,15 +172,15 @@ import java.io.IOException;
 
 /**
  * @author jinglv
- * @date 2020-04-06 14:20
+ * @date 2020/04/06
  */
 public class Main {
 
     public static void main(String[] args) throws IOException {
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream("mybatis-config.xml"));
         SqlSession sqlSession = factory.openSession();
-        // UserMapper.xml文件中的namespace="com.test.userMapper"
-        User user = (User) sqlSession.selectOne("com.test.userMapper.getUserById", 3);
+        // UserMapper.xml文件中的namespace="com.demo.userMapper"
+        User user = (User) sqlSession.selectOne("com.test.userMapper.getUserByUid", 3);
         System.out.println(user);
         sqlSession.close();
     }
@@ -213,17 +220,75 @@ import org.apache.ibatis.session.SqlSessionFactory;
 
 /**
  * @author jinglv
- * @date 2020-04-06 14:20
+ * @date 2020/04/06
  */
 public class Main {
 
     public static void main(String[] args) {
         SqlSessionFactory factory = SqlSessionFactoryUtils.getInstance();
         SqlSession sqlSession = factory.openSession();
-        // UserMapper.xml文件中的namespace="com.test.userMapper"
-        User user = (User) sqlSession.selectOne("com.test.userMapper.getUserById", 3);
+        // UserMapper.xml文件中的namespace="com.demo.userMapper"
+        User user = (User) sqlSession.selectOne("com.demo.userMapper.getUserByUid", 3);
         System.out.println(user);
         sqlSession.close();
     }
 }
 ```
+
+# Mapper
+已经上面的实战练习，所写的增删改查是存在问题的。主要问题是冗余的代码过多，模板化代码过多。这是开发如以下流程：
+1. 创建UserDao.java
+2. 创建UserMapper.xml，与UserDao对应
+
+UserMapper.xml
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+创建一个新的mapper ，需要首先给它取一个namespace，这相当于是一个分隔符，因为我们在项目中，
+会存在很多个Mapper，每一个 Mapper中都会定义相应的增删改查方法，为了避免方法冲突，也为了便于管理，
+每一个Mapper都有自己的namespace，而且这个namespace不可以重复
+-->
+<mapper namespace="com.mybatis.demo.dao.UserDao">
+
+    <select id="getUserByUid" resultType="com.mybatis.demo.entity.User">
+        select *
+        from user
+        where uid = #{uid};
+    </select>
+
+    <select id="getUserAll" resultType="com.mybatis.demo.entity.User">
+        select *
+        from user;
+    </select>
+
+    <insert id="addUser" parameterType="com.mybatis.demo.entity.User"> <!--parameterType 表示传入的参数类型。参数都是通过 # 来引用-->
+        insert into user (uid, username,address) values (#{uid},#{username},#{address});
+    </insert>
+
+    <insert id="addUser2" parameterType="com.mybatis.demo.entity.User">
+        <selectKey resultType="java.lang.String" keyProperty="id" order="BEFORE">
+            select uuid();
+        </selectKey>
+        insert into user (uid,username,address) values (#{uid},#{username},#{address});
+    </insert>
+
+    <delete id="deleteUserByUid" parameterType="java.lang.Integer">
+        delete
+        from user
+        where uid = #{uid}
+    </delete>
+
+    <update id="updateUser" parameterType="com.mybatis.demo.entity.User">
+        update user
+        set username = #{username}
+        where uid = #{uid};
+    </update>
+</mapper>
+```
+
+完成以上两个步骤后，会发现，这个UserDao有很多可以优化的地方，在UserDao方法中都要获取SQLSession，涉及到增删改查的方法，还需要commit，SQLSession用完之后，还需要关闭，sqlSession执行时需要的参数就是方法的参数，sqlSession要执行的SQL ，和XML中的定义是一一对应的。这是一个模板化程度很高的代码。所有可以进行以下流程的改进：
+1. 创建接口UserMapper.java
+2. 创建UserMapper.xml，与UserMapper对应（注意，UserMapper.xml 和 UserMapper 需要放在同一个包下面）

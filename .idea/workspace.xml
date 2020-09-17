@@ -1,189 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cabead3-ff37-46bf-8c3d-1f9ba3e2a8bc" name="Default Changelist" comment="xiang'mu">
-      <change afterPath="$PROJECT_DIR$/../accounting-platform/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-api-test/src/main/java/com/api/test/utils/FakerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/accounting-platform-api-test/accounting-platform-api-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/accounting-platform-api-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/accounting-platform-api-test/src/main/java/com/yuanfeng/accounting/apiobject/UserApiObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/accounting-platform-api-test/src/main/java/com/yuanfeng/accounting/apiobject/VirtualAccountApiObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/client/AssetClient.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/client/RouterClient.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/repository/AddAssetRepository.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/repository/ApproveRouterRepository.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/sql/AddAssetConstantSql.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/java/com/yuanfeng/capital/api/sql/ApproveRouterSql.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/test/java/com/yuanfeng/capital/api/client/AssetClientTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/test/java/com/yuanfeng/capital/api/client/RouterClientTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-operation-platform-api-test/src/test/java/com/yuanfeng/capital/api/test/AddAssetFlowTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/capital-technology-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/db/ConstantSql.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/db/DataRepository.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/db/DataSources.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/repository/CapitalOperationPlatformRepository.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/utils/FakerUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/utils/FileService.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/capital-technology-common/src/main/java/com/yuanfeng/api/common/utils/OauthClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/loan-transaction-api-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/loan-transaction-api-test/src/main/java/com/yuanfeng/loan/transaction/api/client/MakeLoanClient.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/loan-transaction-api-test/src/test/java/com/yuanfeng/loan/transaction/api/client/MakeLoanClientTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/mars-api-test/mars-api-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../capital-technology-api/mars-api-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-algorithms/java-algorithms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-algorithms/src/main/java/com/java/algorithms/example/sort/common/SortTestHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-algorithms/src/main/java/com/java/algorithms/example/sort/common/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-design-pattern/java-design-pattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-leet-code/java-leet-code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-new/java-new.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-principle/java-principle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-sample.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-sample/java-thread/java-thread.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/config/SwaggerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/enums/ApiCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/common/utils/ResultUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/entity/MessageEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/vo/ApiResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/vo/MessageVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/model/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/repository/InMemoryMessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/spring/boot/demo/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/spring/boot/demo/controller/MessageControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-example/.idea/spring-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/bean/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/enums/AesEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/utils/AesEncryptionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/common/utils/EncryptionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/controller/EncryptionAndDecryptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/main/java/com/test/tools/faker/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-tools/src/test/java/com/test/tools/common/utils/EncryptionUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xUnit-demo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit4-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xUnit-demo/junit5-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xUnit-demo/testng-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xUnit-demo/xUnit-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/utils/SqlSessionFactoryUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/mybatis/curd/UserOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/mybatis/demo/dao/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/mybatis/demo/mapper/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CodingStandard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/aggregated_report.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.api.TestGetBook.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.api.TestGetBookDetails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.groovy.DBOptionsDemo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.groovy.FileOptionsDemo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.pojo.AddUserBodyTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.request.file.UserClientTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/com.test.response.service.ResumeServiceTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/build/spock-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/db/ConstantSql.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/db/DataRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/db/DataSources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/file/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/pojo/AddUserBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/request/file/UserClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/request/velocity/TemplateService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/client/ResumeClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService$_printIfPersonWithSpecialSkill_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService$_printWorkingDetails_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/api/TestGetBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/api/TestGetBookDetails$__spock_feature_0_0_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/api/TestGetBookDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/BaseDemo$_testGstring_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/BaseDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testFuncation_closure6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testFuncation_closure7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testMyFuncation_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testMyFuncation_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testMyFuncation_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DBOptionsDemo$__spock_feature_0_0_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DBOptionsDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testEach_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testEach_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testEach_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testFind_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testFind_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_0_closure1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_2_closure2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_3_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_4_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_4_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/pojo/AddUserBodyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/request/file/UserClientTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/response/service/ResumeServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/json-demo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/json-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/main/java/com/test/utils/JsonPathUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/target/classes/com/test/utils/JsonPathUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiremock-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/test/java/com/test/TestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/test/java/com/test/TestApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/test-classes/com/test/TestApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/target/test-classes/com/test/TestApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean.md" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean2Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/bean/Bean3Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/ioc/IOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/src/main/java/com/spring/example/ioc/IOC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/main/resources/spring-bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/src/main/resources/spring-bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/test/java/com/spring/example/base/UnitTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/src/test/java/com/spring/example/base/UnitTestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/src/test/java/com/spring/example/bean/Bean1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-example/src/test/java/com/spring/example/bean/Bean1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/bean/Bean1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/bean/Bean2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/bean/Bean2Factory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/bean/Bean3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/bean/Bean3Factory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/injection/dao/InjectionDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/injection/dao/InjectionDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/injection/service/InjectionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/injection/service/InjectionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/OneInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/impl/OneInterfaceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/com/spring/example/ioc/interfaces/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-bean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-injection.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/classes/spring-ioc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/base/UnitTestBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/bean/Bean1Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/ioc/injection/service/InjectionServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/ioc/interfaces/OneInterfaceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-example/target/test-classes/com/spring/example/ioc/interfaces/UserServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/groovy-test-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/CURD.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/CURD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/Mapper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/api/remodeling/RemodelingApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/com/api/remodeling/RemodelingApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,14 +46,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="7226905a-8c15-46b9-80e9-446c619bcae7" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -226,45 +77,47 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Spock" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock" value="spock.lang.Specification" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/groovy-test-demo/src/test/java/com/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mybatis.demo.mapper" />
+      <recent name="com.mybatis.demo.dao" />
       <recent name="com.test.response.service" />
       <recent name="com.test.pojo" />
       <recent name="com.test.request.file" />
-      <recent name="com.test.utils" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
-      <recent name="spock.lang.Specification" />
       <recent name="" />
+      <recent name="spock.lang.Specification" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper" />
+      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/basic" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/basic" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/book" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/auth" />
-      <recent name="$PROJECT_DIR$/mustache-demo/src/main/resources/mustache" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/book" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/encryption" />
-      <recent name="$PROJECT_DIR$/groovy-test-demo/src/test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.test.pojo" />
@@ -273,21 +126,21 @@
       <recent name="com.demo" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/basic" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/basic" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/book" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/user" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper" />
+      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/mapper" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/auth" />
+      <recent name="$PROJECT_DIR$/mustache-demo/src/main/resources/mustache" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/book" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestAuth.testAuthOauth2">
-    <configuration name="WireMockApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.WireMockApplication" />
-      <module name="wiremock-demo" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mybatis.demo.Main" />
+      <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="com.mybatis.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -295,33 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.test.auth.TestAuth" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAuth.testAuthBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.test.auth.TestAuth" />
-      <option name="METHOD_NAME" value="testAuthBasic" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -342,17 +175,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFilter.testEncryptionResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
+    <configuration name="UserDaoTest.getAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.filter.*" />
+          <option name="PATTERN" value="com.mybatis.demo.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.filter" />
-      <option name="MAIN_CLASS_NAME" value="com.test.filter.TestFilter" />
-      <option name="METHOD_NAME" value="testEncryptionResponse" />
+      <option name="PACKAGE_NAME" value="com.mybatis.demo.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatis.demo.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="getAllUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.getUserAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatis.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatis.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatis.demo.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="getUserAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserOperation.UserInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatis.curd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatis.curd" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatis.curd.UserOperation" />
+      <option name="METHOD_NAME" value="UserInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -360,14 +225,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserMapperTest.getUserAll" />
+        <item itemvalue="JUnit.UserDaoTest.getAllUser" />
+        <item itemvalue="JUnit.UserOperation.UserInsert" />
         <item itemvalue="JUnit.TestAuth.testAuthOauth2" />
-        <item itemvalue="JUnit.TestAuth" />
-        <item itemvalue="Application.WireMockApplication" />
-        <item itemvalue="JUnit.TestAuth.testAuthBasic" />
-        <item itemvalue="JUnit.TestFilter.testEncryptionResponse" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -407,6 +273,8 @@
       <workItem from="1599648579642" duration="674000" />
       <workItem from="1600054418179" duration="9041000" />
       <workItem from="1600078347810" duration="1462000" />
+      <workItem from="1600167247289" duration="690000" />
+      <workItem from="1600313442120" duration="7664000" />
     </task>
     <task id="LOCAL-00001" summary="pom调整">
       <created>1593678279065</created>
@@ -461,7 +329,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -516,6 +384,10 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="354" y="115" key="#Inspections/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596609197822" />
+    <state x="320" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600314003219">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="320" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314003219" />
     <state x="461" y="239" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596608913790">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
@@ -542,7 +414,7 @@
     <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540544845" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598008346438" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.820@0.23.1440.820" timestamp="1597142554432" />
-    <state width="1396" height="223" key="GridCell.Tab.0.bottom" timestamp="1600082824854">
+    <state width="1396" height="212" key="GridCell.Tab.0.bottom" timestamp="1600330367610">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915408" />
@@ -551,13 +423,13 @@
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926174" />
     <state width="1396" height="428" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166882" />
     <state width="1396" height="256" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
-    <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600061473495" />
+    <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349360" />
     <state width="1396" height="532" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
-    <state width="1396" height="223" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600082824854" />
+    <state width="1396" height="212" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367610" />
     <state width="1396" height="270" key="GridCell.Tab.0.bottom/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936624" />
     <state width="1396" height="232" key="GridCell.Tab.0.bottom/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281790" />
-    <state width="1396" height="223" key="GridCell.Tab.0.center" timestamp="1600082824853">
+    <state width="1396" height="212" key="GridCell.Tab.0.center" timestamp="1600330367609">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
@@ -566,13 +438,13 @@
     <state width="1396" height="215" key="GridCell.Tab.0.center/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
     <state width="1396" height="428" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166881" />
     <state width="1396" height="256" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
-    <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600061473492" />
+    <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349359" />
     <state width="1396" height="532" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
-    <state width="1396" height="223" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600082824853" />
+    <state width="1396" height="212" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367609" />
     <state width="1396" height="270" key="GridCell.Tab.0.center/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936622" />
     <state width="1396" height="232" key="GridCell.Tab.0.center/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281789" />
-    <state width="1396" height="223" key="GridCell.Tab.0.left" timestamp="1600082824852">
+    <state width="1396" height="212" key="GridCell.Tab.0.left" timestamp="1600330367608">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
@@ -581,13 +453,13 @@
     <state width="1396" height="215" key="GridCell.Tab.0.left/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926172" />
     <state width="1396" height="428" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166880" />
     <state width="1396" height="256" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1596096762160" />
-    <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600061473491" />
+    <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349358" />
     <state width="1396" height="532" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1596686821918" />
-    <state width="1396" height="223" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600082824852" />
+    <state width="1396" height="212" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367608" />
     <state width="1396" height="270" key="GridCell.Tab.0.left/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936622" />
     <state width="1396" height="232" key="GridCell.Tab.0.left/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711653" />
     <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281788" />
-    <state width="1396" height="223" key="GridCell.Tab.0.right" timestamp="1600082824854">
+    <state width="1396" height="212" key="GridCell.Tab.0.right" timestamp="1600330367609">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915407" />
@@ -596,9 +468,9 @@
     <state width="1396" height="215" key="GridCell.Tab.0.right/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
     <state width="1396" height="428" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166881" />
     <state width="1396" height="256" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
-    <state width="1396" height="222" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600061473494" />
+    <state width="1396" height="222" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349359" />
     <state width="1396" height="532" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
-    <state width="1396" height="223" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600082824854" />
+    <state width="1396" height="212" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367609" />
     <state width="1396" height="270" key="GridCell.Tab.0.right/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936623" />
     <state width="1396" height="232" key="GridCell.Tab.0.right/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.right/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281789" />
@@ -618,6 +490,10 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state width="1396" height="251" key="GridCell.Tab.1.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615795438" />
+    <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1600314012213">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="243" height="457" key="HiddenNamespacesPopup/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314012213" />
     <state x="258" y="88" key="Maven.ArtifactSearchDialog" timestamp="1593592601963">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
@@ -628,13 +504,14 @@
     <state x="483" y="135" key="RollbackChangesDialog/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678252493" />
     <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101771714" />
     <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812@0.23.1440.812" timestamp="1596096467106" />
-    <state x="229" y="23" key="SettingsEditor" timestamp="1599648654563">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="243" y="23" key="SettingsEditor" timestamp="1600313735742">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="229" y="65" key="SettingsEditor/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593676526735" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.808@0.23.1440.808" timestamp="1596344634963" />
+    <state x="229" y="23" key="SettingsEditor/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600167263519" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.812@0.23.1440.812" timestamp="1596097054431" />
-    <state x="243" y="90" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596618810783" />
+    <state x="243" y="23" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600313735742" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1599648654563" />
     <state x="243" y="90" key="SettingsEditor/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598005967293" />
     <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1598008377391">
@@ -651,10 +528,11 @@
     </state>
     <state x="531" y="271" key="chooseDestDirectoryDialog/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596683906511" />
     <state x="531" y="273" key="chooseDestDirectoryDialog/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597042470124" />
-    <state x="499" y="220" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597042470206">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="499" y="219" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600329161249">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="499" y="219" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596683906612" />
+    <state x="499" y="219" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600329161249" />
     <state x="499" y="220" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597042470205" />
     <state x="308" y="92" key="editAsTableFormatDialogDimension" timestamp="1596609146281">
       <screen x="0" y="23" width="1440" height="814" />

@@ -17,7 +17,7 @@
         <groovy.version>2.4.12</groovy.version>
         <spock-core.version>1.1-groovy-2.4</spock-core.version>
         <spock-report.version>1.5.0</spock-report.version>
-        <mysql.version>5.1.49</mysql.version>
+        <mysql.version>8.0.20</mysql.version>
         <groovycsv.version>1.3</groovycsv.version>
         <snakeyaml.version>1.26</snakeyaml.version>
         <velocity.version>1.5</velocity.version>

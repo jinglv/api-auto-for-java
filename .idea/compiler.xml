@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="wiremock-demo" />
-        <module name="rest-assured-demo" />
         <module name="mustache-demo" />
+        <module name="wiremock-demo" />
         <module name="json-demo" />
-        <module name="groovy-test-demo" />
-        <module name="extent-report-demo" />
         <module name="mybatis-demo" />
+        <module name="extent-report-demo" />
+        <module name="groovy-test-demo" />
+        <module name="rest-assured-demo" />
         <module name="jsonpath-demo" />
       </profile>
     </annotationProcessing>

@@ -1,2 +1,0 @@
-name,age,address
-Tom,100,Beijing

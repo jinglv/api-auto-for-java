@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+创建一个新的mapper ，需要首先给它取一个namespace，这相当于是一个分隔符，因为我们在项目中，
+会存在很多个Mapper，每一个 Mapper中都会定义相应的增删改查方法，为了避免方法冲突，也为了便于管理，
+每一个Mapper都有自己的namespace，而且这个namespace不可以重复
+-->
+<mapper namespace="com.mybatis.demo.mapper.UserMapper">
+
+    <select id="getUserByUid" resultType="com.mybatis.demo.entity.User">
+        select *
+        from user
+        where uid = #{uid};
+    </select>
+
+    <select id="getUserAll" resultType="com.mybatis.demo.entity.User">
+        select *
+        from user;
+    </select>
+
+    <insert id="addUser" parameterType="com.mybatis.demo.entity.User"> <!--parameterType 表示传入的参数类型。参数都是通过 # 来引用-->
+        insert into user (uid, username,address) values (#{uid},#{username},#{address});
+    </insert>
+
+    <insert id="addUser2" parameterType="com.mybatis.demo.entity.User">
+        <selectKey resultType="java.lang.String" keyProperty="id" order="BEFORE">
+            select uuid();
+        </selectKey>
+        insert into user (uid,username,address) values (#{uid},#{username},#{address});
+    </insert>
+
+    <delete id="deleteUserByUid" parameterType="java.lang.Integer">
+        delete
+        from user
+        where uid = #{uid}
+    </delete>
+
+    <update id="updateUser" parameterType="java.lang.Integer">
+        update user
+        set username = #{username}
+        where uid = #{uid};
+    </update>
+</mapper>

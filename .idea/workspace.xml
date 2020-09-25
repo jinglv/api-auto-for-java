@@ -9,27 +9,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cabead3-ff37-46bf-8c3d-1f9ba3e2a8bc" name="Default Changelist" comment="xiang'mu">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/utils/SqlSessionFactoryUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/mybatis/curd/UserOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/mybatis/demo/dao/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/mybatis/demo/mapper/UserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-report-demo/target/classes/com/demo/ExtentTestNGIReporterListener$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-report-demo/target/classes/com/demo/ExtentTestNGIReporterListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-report-demo/target/classes/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-report-demo/target/test-classes/com/test/TestMethodsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/body/addUser.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/body/template/addUserTemplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/db/ConstantSql.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/db/DataRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/db/DataSources.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/file/FileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/pojo/AddUserBody.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/request/file/UserClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/request/velocity/TemplateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/client/ResumeClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService$_printIfPersonWithSpecialSkill_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService$_printWorkingDetails_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/com/test/response/service/ResumeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/classes/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/api/TestGetBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/api/TestGetBookDetails$__spock_feature_0_0_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/api/TestGetBookDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/BaseDemo$_testGstring_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/BaseDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testFuncation_closure6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testFuncation_closure7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testMyFuncation_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testMyFuncation_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo$_testMyFuncation_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/ClosureDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DBOptionsDemo$__spock_feature_0_0_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DBOptionsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testEach_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testEach_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testEach_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testFind_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo$_testFind_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/DataHandleDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_0_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_2_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_3_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_4_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo$__spock_feature_0_4_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/groovy/FileOptionsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/pojo/AddUserBodyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/request/file/UserClientTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/com/test/response/service/ResumeServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groovy-test-demo/target/test-classes/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-demo/target/classes/User.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-demo/target/classes/com/json/example/JsonObjectSample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-demo/target/classes/com/json/example/ReadJsonSample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-demo/target/classes/com/json/example/bean/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonpath-demo/target/classes/boo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonpath-demo/target/classes/com/test/utils/JsonPathUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonpath-demo/target/test-classes/com/test/utils/JsonPathUtilsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mustache-demo/target/classes/com/test/pojo/Todo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mustache-demo/target/classes/com/test/utils/MustacheUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mustache-demo/target/classes/mustache/todo.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mustache-demo/target/test-classes/com/test/utils/MustacheUtilsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/utils/MyBatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/com/mybatis/demo/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/com/mybatis/demo/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/com/mybatis/demo/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/com/mybatis/demo/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/com/mybatis/demo/utils/MyBatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/com/mybatis/demo/utils/SqlSessionFactoryUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/test-classes/com/mybatis/curd/UserOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/test-classes/com/mybatis/demo/dao/UserDaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/test-classes/com/mybatis/demo/mapper/UserMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/auth/TestAuth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/basic/TestJson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/basic/TestXml.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/filter/TestFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/com/demo/WireMockApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/basic/Gpath.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/basic/Gxml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/basic/resume.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/book/bookDetails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/book/bookDetailsEncryption.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/user/userDetails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/__files/xmlResponse.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/auth/anyBasicAuth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/auth/anyOuathAuth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/basic/getGpath.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/basic/getGxml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/basic/getResume.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/getBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/getBookByPathPatter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/getBookByQueryParam.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/getBookDetails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/getBookEncryption.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/postAddBookWithAnyBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/postAddBookWithBasicAuth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/postAddBookWithBasicAuthByFiles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/postAddBookWithBodyPatter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/book/postAddBookWithXpath.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/user/getUserDetailsWithUrlPath.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/user/postAddPersonByXml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/user/postAddUserDetails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/classes/mock/mappings/user/postAddXmlUser.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/test-classes/com/test/TestApi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiremock-demo/target/test-classes/com/test/TestWireMock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/spring-boot-shiro/src/main/java/com/demo/shiro/CustomerRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/spring-boot-shiro/src/main/java/com/demo/shiro/TestAuthenticatorCustomerRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CodingStandard.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groovy-test-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/groovy-test-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-demo/CURD.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/CURD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-demo/Mapper.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonpath-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jsonpath-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/com/api/remodeling/RemodelingApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" />
@@ -46,8 +141,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,7 +229,7 @@
       <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/__files/book" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.JsonPathUtilsTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mybatis.demo.Main" />
       <module name="mybatis-demo" />
@@ -159,18 +254,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAuth.testAuthOauth2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
+    <configuration name="JsonPathUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jsonpath-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.auth.*" />
+          <option name="PATTERN" value="com.test.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.test.auth.TestAuth" />
-      <option name="METHOD_NAME" value="testAuthOauth2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.test.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.test.utils.JsonPathUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,6 +285,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatis.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatis.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatis.demo.mapper.UserMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserMapperTest.getUserAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-demo" />
       <extension name="coverage">
@@ -207,29 +316,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserOperation.UserInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mybatis.curd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mybatis.curd" />
-      <option name="MAIN_CLASS_NAME" value="com.mybatis.curd.UserOperation" />
-      <option name="METHOD_NAME" value="UserInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.JsonPathUtilsTest" />
+        <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="JUnit.UserMapperTest.getUserAll" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserDaoTest.getAllUser" />
-        <item itemvalue="JUnit.UserOperation.UserInsert" />
-        <item itemvalue="JUnit.TestAuth.testAuthOauth2" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +367,15 @@
       <workItem from="1600054418179" duration="9041000" />
       <workItem from="1600078347810" duration="1462000" />
       <workItem from="1600167247289" duration="690000" />
-      <workItem from="1600313442120" duration="7664000" />
+      <workItem from="1600313442120" duration="8699000" />
+      <workItem from="1600332324939" duration="902000" />
+      <workItem from="1600334027246" duration="1327000" />
+      <workItem from="1600681001668" duration="711000" />
+      <workItem from="1600683354737" duration="289000" />
+      <workItem from="1600688496530" duration="1993000" />
+      <workItem from="1600753939189" duration="137000" />
+      <workItem from="1600760173988" duration="622000" />
+      <workItem from="1600998673606" duration="2014000" />
     </task>
     <task id="LOCAL-00001" summary="pom调整">
       <created>1593678279065</created>
@@ -325,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597142554760</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat:增加mybatis学习笔记">
+      <created>1600331842887</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600331842887</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +485,8 @@
     <MESSAGE value="perf:增加Groovy脚本测试接口&#10;&#10;1.Groovy编写测试接口脚本&#10;2.调整代码格式" />
     <MESSAGE value="feat:groovy接口测试笔记" />
     <MESSAGE value="[add]json学习笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]json学习笔记" />
+    <MESSAGE value="feat:增加mybatis学习笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:增加mybatis学习笔记" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="115" key="#Inspections" timestamp="1596609197822">
@@ -405,91 +514,96 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="482" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596596620208" />
-    <state x="133" y="23" key="CommitChangelistDialog2" timestamp="1598008346438">
-      <screen x="0" y="23" width="1440" height="819" />
+    <state x="161" y="23" key="CommitChangelistDialog2" timestamp="1600331842411">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="307" y="23" key="CommitChangelistDialog2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678278897" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446906926" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694669815" />
     <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540544845" />
+    <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.816@0.23.1440.816" timestamp="1600331842411" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598008346438" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.820@0.23.1440.820" timestamp="1597142554432" />
-    <state width="1396" height="212" key="GridCell.Tab.0.bottom" timestamp="1600330367610">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1396" height="204" key="GridCell.Tab.0.bottom" timestamp="1601016813638">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915408" />
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1595926324083" />
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926174" />
-    <state width="1396" height="428" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166882" />
+    <state width="1396" height="204" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1601016813638" />
     <state width="1396" height="256" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
     <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349360" />
     <state width="1396" height="532" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
-    <state width="1396" height="212" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367610" />
+    <state width="1396" height="206" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061620" />
     <state width="1396" height="270" key="GridCell.Tab.0.bottom/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936624" />
     <state width="1396" height="232" key="GridCell.Tab.0.bottom/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281790" />
-    <state width="1396" height="212" key="GridCell.Tab.0.center" timestamp="1600330367609">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1396" height="204" key="GridCell.Tab.0.center" timestamp="1601016813637">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state width="1396" height="215" key="GridCell.Tab.0.center/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
-    <state width="1396" height="428" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166881" />
+    <state width="1396" height="204" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1601016813637" />
     <state width="1396" height="256" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
     <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349359" />
     <state width="1396" height="532" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
-    <state width="1396" height="212" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367609" />
+    <state width="1396" height="206" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061619" />
     <state width="1396" height="270" key="GridCell.Tab.0.center/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936622" />
     <state width="1396" height="232" key="GridCell.Tab.0.center/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281789" />
-    <state width="1396" height="212" key="GridCell.Tab.0.left" timestamp="1600330367608">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1396" height="204" key="GridCell.Tab.0.left" timestamp="1601016813637">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915406" />
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state width="1396" height="215" key="GridCell.Tab.0.left/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926172" />
-    <state width="1396" height="428" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166880" />
+    <state width="1396" height="204" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1601016813637" />
     <state width="1396" height="256" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1596096762160" />
     <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349358" />
     <state width="1396" height="532" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1596686821918" />
-    <state width="1396" height="212" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367608" />
+    <state width="1396" height="206" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061618" />
     <state width="1396" height="270" key="GridCell.Tab.0.left/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936622" />
     <state width="1396" height="232" key="GridCell.Tab.0.left/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711653" />
     <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281788" />
-    <state width="1396" height="212" key="GridCell.Tab.0.right" timestamp="1600330367609">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1396" height="204" key="GridCell.Tab.0.right" timestamp="1601016813638">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593679915407" />
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state width="1396" height="215" key="GridCell.Tab.0.right/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
-    <state width="1396" height="428" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600055166881" />
+    <state width="1396" height="204" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1601016813638" />
     <state width="1396" height="256" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1596096762161" />
     <state width="1396" height="222" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349359" />
     <state width="1396" height="532" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
-    <state width="1396" height="212" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600330367609" />
+    <state width="1396" height="206" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061619" />
     <state width="1396" height="270" key="GridCell.Tab.0.right/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936623" />
     <state width="1396" height="232" key="GridCell.Tab.0.right/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.right/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281789" />
-    <state width="1396" height="251" key="GridCell.Tab.1.bottom" timestamp="1596615795438">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="251" key="GridCell.Tab.1.bottom" timestamp="1600333242117">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1396" height="251" key="GridCell.Tab.1.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615795438" />
-    <state width="1396" height="251" key="GridCell.Tab.1.center" timestamp="1596615795437">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="251" key="GridCell.Tab.1.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600333242117" />
+    <state width="1396" height="251" key="GridCell.Tab.1.center" timestamp="1600333242116">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1396" height="251" key="GridCell.Tab.1.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615795437" />
-    <state width="1396" height="251" key="GridCell.Tab.1.left" timestamp="1596615795437">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="251" key="GridCell.Tab.1.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600333242116" />
+    <state width="1396" height="251" key="GridCell.Tab.1.left" timestamp="1600333242116">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1396" height="251" key="GridCell.Tab.1.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615795437" />
-    <state width="1396" height="251" key="GridCell.Tab.1.right" timestamp="1596615795438">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state width="1396" height="251" key="GridCell.Tab.1.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600333242116" />
+    <state width="1396" height="251" key="GridCell.Tab.1.right" timestamp="1600333242117">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1396" height="251" key="GridCell.Tab.1.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596615795438" />
+    <state width="1396" height="251" key="GridCell.Tab.1.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600333242117" />
     <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1600314012213">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
@@ -498,11 +612,11 @@
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="258" y="88" key="Maven.ArtifactSearchDialog/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593592601963" />
-    <state x="483" y="136" key="RollbackChangesDialog" timestamp="1596101771714">
+    <state x="483" y="136" key="RollbackChangesDialog" timestamp="1600683369071">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="483" y="135" key="RollbackChangesDialog/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678252493" />
-    <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1596101771714" />
+    <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1600683369071" />
     <state x="483" y="136" key="RollbackChangesDialog/0.23.1440.812@0.23.1440.812" timestamp="1596096467106" />
     <state x="243" y="23" key="SettingsEditor" timestamp="1600313735742">
       <screen x="0" y="23" width="1440" height="814" />
@@ -514,13 +628,14 @@
     <state x="243" y="23" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600313735742" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1599648654563" />
     <state x="243" y="90" key="SettingsEditor/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598005967293" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1598008377391">
-      <screen x="0" y="23" width="1440" height="819" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1600331845994">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="320" y="166" key="Vcs.Push.Dialog.v2/0.23.1440.806/1440.-102.1920.1057@0.23.1440.806" timestamp="1593678282841" />
     <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446909831" />
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694672162" />
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540547454" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1600331845994" />
     <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598008377391" />
     <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.820@0.23.1440.820" timestamp="1597142556546" />
     <state x="531" y="273" key="chooseDestDirectoryDialog" timestamp="1597042470124">

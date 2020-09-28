@@ -5,16 +5,16 @@
 [rest-assured中文参考文档](https://testerhome.com/topics/7060)
 
 ## Rest-Assured介绍
-Rest-Assured 是一个测试 RESTful Web Services 的 Java 类库。可以使用 Rest-Assured 编写高度自定义化的 HTTP 请求用来测试各种各样 Restful 服务组合的业务实现。
+Rest-Assured是一个测试RESTful Web Services的Java类库。可以使用Rest-Assured编写高度自定义化的HTTP请求用来测试各种各样Restful服务组合的业务实现。
 
-Rest-Assured 同样能够验证从服务器返回的 HTTP 响应报文，例如服务器响应状态码，响应报文内容等，Rest-Assured 可以灵活的用来进行 Restful Webservice 测试。
+Rest-Assured同样能够验证从服务器返回的HTTP响应报文，例如服务器响应状态码，响应报文内容等，Rest-Assured可以灵活的用来进行Restful Webservice测试。
 
-用 Java 做接口自动化测试首选 REST Assured，具体原因如下：
+用Java做接口自动化测试首选REST Assured，具体原因如下：
 - 开源
-- 简约的接口测试 DSL
-- 支持 xml json 的结构化解析
-- 支持 xpath jsonpath gpath 等多种解析方式
-- 对 spring 的支持比较全面
+- 简约的接口测试DSL
+- 支持xml json的结构化解析
+- 支持xpath jsonpath gpath等多种解析方式
+- 对spring的支持比较全面
 
 ## Rest-Assured使用
 

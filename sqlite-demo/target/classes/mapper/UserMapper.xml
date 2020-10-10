@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.demo.mapper.UserMapper">
+
+    <!--设置实体名称与数据表列名不一致的情况-->
+    <resultMap id="BaseResultMap" type="com.db.demo.entity.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="register_time" property="registerTime" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findAllUser" resultMap="BaseResultMap" resultType="com.db.demo.entity.User">
+        select *
+        from user
+    </select>
+
+
+</mapper>

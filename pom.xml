@@ -17,6 +17,7 @@
         <module>mybatis-demo</module>
         <module>groovy-test-demo</module>
         <module>jsonpath-demo</module>
+        <module>sqlite-demo</module>
     </modules>
 
     <build>

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mustache-demo" />
+        <module name="sqlite-demo" />
         <module name="wiremock-demo" />
         <module name="json-demo" />
         <module name="mybatis-demo" />

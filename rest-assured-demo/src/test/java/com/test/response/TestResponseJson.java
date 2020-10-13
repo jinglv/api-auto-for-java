@@ -1,6 +1,8 @@
-package com.test.basic;
+package com.test.response;
 
 
+import io.restassured.RestAssured;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -8,19 +10,24 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
 
 /**
- * 测试接口，返回为json
+ * 测试接口，返回为响应体为json进行断言处理
  *
  * @author jingLv
  * @date 2020/07/28
  */
-public class TestJson {
+class TestResponseJson {
+
+    @BeforeAll
+    static void before() {
+        RestAssured.baseURI = "http://127.0.0.1:9090/api";
+    }
 
     /**
      * 可以使用根节点.(点)子节点的方式一层层的找下去，例如我们需要对lottoId等于 5 进行断言：
      */
     @Test
     void testGPathForNode01() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 log().all().
                 get("/json").
@@ -34,7 +41,7 @@ public class TestJson {
      */
     @Test
     void testGPathForNode02() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 log().all().
                 get("/json").
@@ -48,7 +55,7 @@ public class TestJson {
      */
     @Test
     void testGPathFoIndex01() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 log().all().get("/json").
                 then().
@@ -60,7 +67,7 @@ public class TestJson {
      */
     @Test
     void testGPathFoIndex02() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 log().all().
                 get("/json").
@@ -74,7 +81,7 @@ public class TestJson {
      */
     @Test
     void testGPathFoFindAll() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 log().all().
                 get("/json").
@@ -88,7 +95,7 @@ public class TestJson {
      */
     @Test
     void testGPathFoFind() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 log().all().
                 get("/json").

@@ -1,6 +1,5 @@
-# 接口文档
+# Rest-Assured
 
-## Rest-Assured
 [rest-assured官方文档](https://github.com/rest-assured/rest-assured/wiki/Usage)
 [rest-assured中文参考文档](https://testerhome.com/topics/7060)
 
@@ -16,23 +15,9 @@ Rest-Assured同样能够验证从服务器返回的HTTP响应报文，例如服�
 - 支持xpath jsonpath gpath等多种解析方式
 - 对spring的支持比较全面
 
-## Rest-Assured使用
 
-### Maven工程添加依赖
-pom.xml添加依赖
-```
-<dependency>
-    <groupId>io.rest-assured</groupId>
-    <artifactId>rest-assured</artifactId>
-    <version>${rest-assured.version}</version>
-</dependency>
 
-<dependency>
-    <groupId>io.rest-assured</groupId>
-    <artifactId>json-path</artifactId>
-    <version>${rest-assured.version}</version>
-</dependency>
-```
+## Rest-Assured使用介绍
 
 ### 基本三步曲
 接口进行测试一般由三步曲
@@ -189,11 +174,240 @@ then().body() 可以对响应结果进行断言，在 body 中写入断言：
 ```
 注意:这里的body() 不要和请求体body()以及断言的body()混淆了
 
-### JsonPath(Groovy's GPath)
+
+
+###  请求处理实战
+
+1. 创建Maven项目，并引入依赖
+
+   ```xml
+   <dependency>
+     <groupId>io.rest-assured</groupId>
+     <artifactId>rest-assured</artifactId>
+     <version>${rest-assured.version}</version>
+   </dependency>
+   
+   <dependency>
+     <groupId>io.rest-assured</groupId>
+     <artifactId>json-path</artifactId>
+     <version>${rest-assured.version}</version>
+   </dependency>
+   
+   <dependency>
+     <groupId>org.junit.jupiter</groupId>
+     <artifactId>junit-jupiter</artifactId>
+     <version>RELEASE</version>
+     <scope>test</scope>
+   </dependency>
+   
+   ```
+
+   
+
+2. 以GitHub API接口为例，针对于RESTful的接口，进行请求处理
+
+   - 接口文档：https://developer.github.com/v3/repos/，GitHub的接口文档写的非常不错，可以作为参考
+   - GitHub的token获取：Settings -> Developer settings -> Personal access token -> Generate new token，根据需要的权限，生成一个即可
+   - 选择GitHub repos的仓库接口进行操作
+
+   - 鉴权--API的安全问题，在请求时都需要带上鉴权认证，Rest-Assured支持多种鉴权方式（可查看官网），下面就介绍常见的几种鉴权方式
+
+     - oauth2
+
+     ```java
+      /**
+     	* 查询GitHub的repo信息--oauth2
+       * auth().oauth2() 该方式是将token信息隐式在请求体重
+       * auth().preemptive().oauth2() 显示将鉴权信息在header中携带
+       * 直接指定header参数进行鉴权 header("Authorization", "token xxxxxx")
+       */
+       @Test
+       void queryRepoOauth() {
+         given().log().all()
+           //.auth().oauth2("token")
+           //.auth().preemptive().oauth2("token")
+           .header("Authorization", "token token")
+           .when()
+           .get("https://api.github.com/user/repos")
+           .then()
+           .log().all();
+       }
+     ```
+
+     
+
+     - basic
+
+     ```java
+      /**
+     	* 查询GitHub的repo信息--basic
+     	* basic("username", "password") 中的username和password替换为自己的GitHub的用户名和密码即可
+     	*/
+       @Test
+       void queryRepoBasic() {
+         given().log().all()
+           .auth().preemptive().basic("username", "password")
+           .when()
+           .get("https://api.github.com/user/repos")
+           .then()
+           .log().all();
+       }
+     ```
+
+   - Get请求
+
+   - POST请求
+
+   - PUT请求
+
+   - PATCH请求
+
+   - DELETE请求
+
+   ```java
+   package com.test.basic;
+   
+   import io.restassured.RestAssured;
+   import org.junit.jupiter.api.BeforeAll;
+   import org.junit.jupiter.api.Test;
+   
+   import static io.restassured.RestAssured.given;
+   import static io.restassured.RestAssured.oauth2;
+   
+   /**
+    * Rest-Assured请求处理，发送不同的Request
+    *
+    * @author jingLv
+    * @date 2020/10/13
+    */
+   class TestGithubApi {
+   
+       @BeforeAll
+       static void setUp() {
+           RestAssured.baseURI = "https://api.github.com";
+           RestAssured.authentication = oauth2("token");
+       }
+   
+       /**
+        * 发送get请求
+        */
+       @Test
+       void testGetRequest() {
+           given()
+                   .log().all()
+                   .when()
+                   .get("/user/repos")
+                   .then()
+                   .log().status()
+                   .statusCode(200);
+       }
+   
+       /**
+        * 发送post请求 -- 创建Hello-Word的repos
+        */
+       @Test
+       void testPostRequest() {
+           String postBody = "{\n" +
+                   "  \"name\": \"Hello-World\",\n" +
+                   "  \"description\": \"This is your hello repository\",\n" +
+                   "  \"homepage\": \"https://github.com\",\n" +
+                   "  \"private\": false,\n" +
+                   "  \"has_issues\": true,\n" +
+                   "  \"has_projects\": true,\n" +
+                   "  \"has_wiki\": true\n" +
+                   "}";
+           given()
+                   .log().all()
+                   .body(postBody)
+                   .when()
+                   .post("/user/repos")
+                   .then()
+                   .log().status()
+                   .statusCode(201);
+       }
+   
+       /**
+        * 发送Patch请求 -- 修改repos
+        */
+       @Test
+       void testPatchRequest() {
+           String editBody = "{\n" +
+                   "  \"name\": \"Hello-Edit\",\n" +
+                   "  \"description\": \"This is your edit repository\",\n" +
+                   "  \"homepage\": \"https://github.com\",\n" +
+                   "  \"private\": false,\n" +
+                   "  \"has_issues\": false,\n" +
+                   "  \"has_projects\": false,\n" +
+                   "  \"has_wiki\": false\n" +
+                   "}";
+           given()
+                   .log().all()
+                   .pathParam("owner", "jinglv")
+                   .pathParam("repo", "Hello-World")
+                   .body(editBody)
+                   .when()
+                   .patch("/repos/{owner}/{repo}")
+                   .then()
+                   .log().status()
+                   .statusCode(200);
+       }
+   
+       /**
+        * 发送Put请求 -- 修改topic
+        * 根据接口文档说明要指定媒体类型
+        */
+       @Test
+       void testPutRequest() {
+           String putBody = "{\n" +
+                   "  \"names\": [\n" +
+                   "    \"rest-assured\"\n" +
+                   "  ]\n" +
+                   "}";
+           given()
+                   .log().all()
+                   .pathParam("owner", "jinglv")
+                   .pathParam("repo", "Hello-Edit")
+                   .header("Accept", "application/vnd.github.mercy-preview+json")
+                   .body(putBody)
+                   .when()
+                   .put("/repos/{owner}/{repo}/topics")
+                   .then()
+                   .log().status()
+                   .statusCode(200);
+       }
+   
+       /**
+        * 发送delete请求 -- 删除repos
+        * 根据接口文档说明要指定媒体类型
+        */
+       @Test
+       void testDeleteRequest() {
+           given()
+                   .log().all()
+                   .pathParam("owner", "jinglv")
+                   .pathParam("repo", "Hello-Edit")
+                   .when()
+                   .delete("/repos/{owner}/{repo}")
+                   .then()
+                   .log().status()
+                   .statusCode(204);
+       }
+   }
+   
+   ```
+
+
+
+## 接口响应的断言处理
+
+为了模拟各种响应，使用WireMock进行响应规则的配置
+
+### 响应体为JSON断言(JsonPath(Groovy's GPath))
+
 在 Groovy 的官网，虽然并未提及它在 json 中的使用，但实际上只要是树形的层级关系，无论是 json、xml 或者其他格式，就可以使用这种简单的语法帮我们去找到其中的值，rest-assured 也已经帮我们实现支持了 GPath 的断言方式
 [Groovy Gpath官网说明](http://groovy-lang.org/processing-xml.html#_gpath)
 
-官方实例演示（可使用WireMock进行接口的定义）
+官方实例演示
 ```json
 {
 	"lotto": {
@@ -213,10 +427,121 @@ then().body() 可以对响应结果进行断言，在 body 中写入断言：
 - 索引取值
 - findAll
 - find
-### XML断言
+```java
+package com.test.basic;
+
+
+import io.restassured.RestAssured;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
+
+/**
+ * 测试接口，返回为响应体为json进行断言处理
+ *
+ * @author jingLv
+ * @date 2020/07/28
+ */
+class TestResponseJson {
+
+    @BeforeAll
+    static void before() {
+        RestAssured.baseURI = "http://127.0.0.1:9090/api";
+    }
+
+    /**
+     * 可以使用根节点.(点)子节点的方式一层层的找下去，例如我们需要对lottoId等于 5 进行断言：
+     */
+    @Test
+    void testGPathForNode01() {
+        given().
+                when().
+                log().all().
+                get("/json").
+                then().
+                log().all().
+                body("lotto.lottoId", equalTo(5));
+    }
+
+    /**
+     * 如果想要断言winners数组下面的winnerId，检查23和54是否包含其中，可以如下lotto.winners.winnerId写法
+     */
+    @Test
+    void testGPathForNode02() {
+        given().
+                when().
+                log().all().
+                get("/json").
+                then().
+                log().all().
+                body("lotto.winners.winnerId", hasItems(54, 23));
+    }
+
+    /**
+     * 如果我们想要取某些相同字段中的某一个，可以使用类似索引的方式获取，例如想要断言 winners 数组下面的 winnerId 的第一个值是否为23，可以使用 lotto.winners.winnerId[0]
+     */
+    @Test
+    void testGPathFoIndex01() {
+        given().
+                when().
+                log().all().get("/json").
+                then().
+                log().all().body("lotto.winners.winnerId[0]", equalTo(23));
+    }
+
+    /**
+     * 如果我们想要取某些相同字段中的最后一个，可以使用 -1 作为索引，例如断言断言 winners 数组下面的 winnerId 的最后一个的值是否为 54
+     */
+    @Test
+    void testGPathFoIndex02() {
+        given().
+                when().
+                log().all().
+                get("/json").
+                then().
+                log().all().
+                body("lotto.winners.winnerId[-1]", equalTo(54));
+    }
+
+    /**
+     * 可以在 findAll 方法中写筛选条件，例如我们想取 winnerId 的值在大于或等于 30 小于 60 之间的结果进行断言
+     */
+    @Test
+    void testGPathFoFindAll() {
+        given().
+                when().
+                log().all().
+                get("/json").
+                then().
+                log().all().
+                body("lotto.winners.findAll{ winners -> winners.winnerId >= 30 && winners.winnerId < 60}.winnerId[0]", equalTo(54));
+    }
+
+    /**
+     * find 的用法与 findAll 基本一致，只是 find 默认取匹配到的第一个
+     */
+    @Test
+    void testGPathFoFind() {
+        given().
+                when().
+                log().all().
+                get("/json").
+                then().
+                log().all().
+                body("lotto.winners.find{ winners -> winners.winnerId >= 30 && winners.winnerId < 60}.winnerId", equalTo(54));
+    }
+}
+```
+
+
+
+### 响应体为XML断言
 GPath也支持XML格式的断言
 
-官方实例演示（可使用WireMock进行接口的定义）
+官方实例演示
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -254,6 +579,88 @@ GPath也支持XML格式的断言
 - it.@type、it.price：在 xml中 断言中，可以利用 it. 属性或节点的值来作为筛选条件
 - `**.findAll`：对于xml中有一个特别的语法，**.findAll，可以直接忽略前面的节点，直接对筛选条件进行匹配
 
+```java
+package com.test.basic;
+
+import io.restassured.RestAssured;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+/**
+ * 测试接口，返回为响应体为xml进行断言处理
+ *
+ * @author jingLv
+ * @date 2020/07/28
+ */
+class TestResponseXml {
+
+    @BeforeAll
+    static void before() {
+        RestAssured.baseURI = "http://127.0.0.1:9090/api";
+    }
+
+    /**
+     * 对第二个name的值Coffee进行断言
+     */
+    @Test
+    void testXMLForIndex() {
+        given().
+                when().
+                get("/xml").
+                then().
+                log().all().
+                body("shopping.category[0].item[1].name", equalTo("Coffee"));
+    }
+
+    /**
+     * 可以利用size()方法来获取对应节点的数量，例如这里要断言category的数量
+     */
+    @Test
+    void testXMLForSize() {
+        given().
+                when().
+                get("/xml").
+                then().
+                log().all().
+                body("shopping.category.size()", equalTo(3));
+    }
+
+    /**
+     * it.@type、it.price
+     * 在 xml中 断言中，可以利用 it. 属性或节点的值来作为筛选条件；
+     * 例如这里要获取 type 为 supplies 的 category 下的第一个 item 的 name，以及获取 price 为 10 的商品名 name
+     */
+    @Test
+    void testXMLForIt() {
+        given().
+                when().
+                get("/xml").
+                then().
+                log().all().
+                body("shopping.category.findAll{ it.@type == 'supplies' }.item[0].name", equalTo("Paper")).
+                body("shopping.category.item.findAll{ it.price == 10 }.name", equalTo("Chocolate"));
+    }
+
+    /**
+     * 对于xml中有一个特别的语法，**.findAll，可以直接忽略前面的节点，直接对筛选条件进行匹配，依然获取price为10的商品名name
+     */
+    @Test
+    void testXMLForFindAll() {
+        given().
+                when().
+                get("/xml").
+                then().
+                log().all().
+                body("**.findAll{ it.price == 10 }.name", equalTo("Chocolate"));
+    }
+}
+```
+
+
+
 ### JsonSchema断言
 [JsonSchema官方文档](https://json-schema.org/understanding-json-schema/)
 
@@ -268,9 +675,8 @@ GPath也支持XML格式的断言
 #### JsonSchema模板生成
 1. 首先要借助于Json schema tool的网站https://www.jsonschema.net/，将返回json字符串复制到页面左边，然后点击INFER SHCEMA,就会自动转换为schema json文件类型,会将每个地段的返回值类型都设置一个默认类型; 在pattern中也可以写正则进行匹配 
 2. 点击“设置”按钮会出现各个类型返回值更详细的断言设置，这个就是schema最常用也是最实用的功能，也可以对每种类型的字段最更细化的区间值校验或者断言，例如长度，取值范围等，具体感兴趣的话可以从官网学习深入学习；平常对重要字段的校验我通常会选用其他断言，比如hamcrest断言 
-3. 选择复制功能，可以将生成的schema模板保存下来 
+3. 选择复制功能，可以将生成的schema模板保存下来与rest-assured结合使用
 
-rest-assured结合使用
 4. 添加maven依赖，在rest-assured完成支持
 5. 使用matchesJsonSchemaInClasspath方法对响应结果进行schema断言
 
@@ -292,6 +698,14 @@ extract是我们获取返回值的核心，通过它来指明后面需要获取�
 #### extract().asString()
 利用extract().asString()先将响应结果以json字符串的形式保存下来，再一一根据需要获取
 
+#### extract().getBody().prettyPrint();
+
+获取响应体的消息体进行json格式化的输出
+
+#### extract().toString()
+
+获取消息体对象
+
 #### extract().response()
 利用extract().response()来讲所有的response信息都保存成一个Response对象，然后在利用各种Response.get方法来获取：
 - 获取所有的Headers：response.getHeaders()
@@ -299,6 +713,77 @@ extract是我们获取返回值的核心，通过它来指明后面需要获取�
 - 获取status line：response.getStatusLine()
 - 获取status code：response.getStatusCode()
 - 获取cookies： response.getCookies()、response.getCookie("cookieName")
+
+#### rest-assured jsonPath的使用
+
+```java
+package com.test.response;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import java.util.concurrent.TimeUnit;
+
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.oauth2;
+
+/**
+ * Response消息的获取和解析
+ *
+ * @author jingLv
+ * @date 2020/10/13
+ */
+class TestGithubApiResponse {
+
+    /**
+     * 设置RestAssured全局配置
+     */
+    @BeforeAll
+    static void setUp() {
+        RestAssured.baseURI = "https://api.github.com";
+        RestAssured.authentication = oauth2("c37acfc546c8be44948e702171d657ad39681795");
+    }
+
+    @Test
+    void getParseResponse() {
+        // 获取接口的response
+        Response response = given().
+                pathParam("owner", "jinglv").
+                pathParam("repo", "api-auto-for-java").
+                when().
+                get("/repos/{owner}/{repo}");
+        String resBody = response.getBody().asString();
+        String resBodyInfo = response.getBody().toString();
+        System.out.println("消息体：" + resBody);
+        System.out.println("消息体对象：" + resBodyInfo);
+
+        // 响应消息体json格式化输出
+        response.getBody().prettyPrint();
+
+        System.out.println("响应的头信息" + response.getHeaders());
+        System.out.println("响应状态：" + response.getHeader("status"));
+        System.out.println("cookie信息：" + response.getCookies());
+        System.out.println("响应值：" + response.getStatusLine());
+        System.out.println("响应码：" + response.getStatusCode());
+        System.out.println("响应的内容类型：" + response.getContentType());
+        System.out.println("接口响应时间(ms)：" + response.getTime());
+        System.out.println("接口响应时间(s)：" + response.getTimeIn(TimeUnit.SECONDS));
+
+        // Rest-Assured jsonPath的使用
+        JsonPath jsonPath = new JsonPath(resBody);
+        System.out.println("repo ID:" + jsonPath.get("id"));
+        // 设置根节点为owner
+        jsonPath.setRoot("owner");
+        System.out.println("owner ID:" + jsonPath.get("id"));
+    }
+}
+
+```
+
+
 
 
 ## 接口加解密处理
@@ -335,7 +820,7 @@ rest-assured提供了几个过滤器：
     
 
 #### 修改response
-```
+```java
 @Test
 public void testFilterResponse() {
     given().log().all()
@@ -370,7 +855,7 @@ public void testFilterResponse() {
 - sessionIdName
 - sessionId
 - session filter可以自动从请求中提取sessionId，并在以后的请求中再附带进cookie发送出去
-```
+```java
 @Test
 public void testJenkinsLogin(){
     RestAssured.confg = RestAssured.config().sessionConfig(
@@ -390,3 +875,4 @@ public void testJenkinsLogin(){
             .then().statusCode(200);
 }
 ```
+

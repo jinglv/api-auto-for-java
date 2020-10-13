@@ -1,24 +1,31 @@
-package com.test.basic;
+package com.test.response;
 
+import io.restassured.RestAssured;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 /**
- * 测试接口，返回为xml
+ * 测试接口，返回为响应体为xml进行断言处理
  *
  * @author jingLv
  * @date 2020/07/28
  */
-public class TestXml {
+class TestResponseXml {
+
+    @BeforeAll
+    static void before() {
+        RestAssured.baseURI = "http://127.0.0.1:9090/api";
+    }
 
     /**
-     * 对第二个 name 的值 Coffee 进行断言
+     * 对第二个name的值Coffee进行断言
      */
     @Test
     void testXMLForIndex() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 get("/xml").
                 then().
@@ -27,11 +34,11 @@ public class TestXml {
     }
 
     /**
-     * 可以利用 size() 方法来获取对应节点的数量，例如这里要断言 category 的数量
+     * 可以利用size()方法来获取对应节点的数量，例如这里要断言category的数量
      */
     @Test
     void testXMLForSize() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 get("/xml").
                 then().
@@ -46,7 +53,7 @@ public class TestXml {
      */
     @Test
     void testXMLForIt() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 get("/xml").
                 then().
@@ -60,7 +67,7 @@ public class TestXml {
      */
     @Test
     void testXMLForFindAll() {
-        given().baseUri("http://127.0.0.1:9090/api").
+        given().
                 when().
                 get("/xml").
                 then().

@@ -19,7 +19,7 @@ public class TestWireMock {
     static WireMockServer wireMockServer = new WireMockServer(8088, 8089);
 
     @BeforeAll
-    static void setUpBeforeClass() {
+    static void setUp() {
         // 启动WireMockServer
         wireMockServer.start();
         // 设置RestAssured
@@ -34,30 +34,37 @@ public class TestWireMock {
     @Test
     @DisplayName("设置基本监听规则")
     void testMonitor01() {
-        wireMockServer.stubFor(get(urlEqualTo("/Rest/Mock"))
+        // 设置Mock响应规则
+        wireMockServer.stubFor(get(urlEqualTo("/api/book/abc"))
                 .willReturn(aResponse()
                         .withStatus(200)
-                        .withHeader("aa", "bb")
-                        .withBody("basic test"))
+                        .withHeader("test", "api")
+                        .withBody("successful"))
         );
 
+        // 请求已Mock响应规则接口
         given()
                 .when()
-                .get("/Rest/Mock")
+                .get("/api/book/abc")
                 .then()
                 .log().all();
     }
 
+    /**
+     * 这是个一个简化写法
+     */
     @Test
     @DisplayName("设置响应简化规则")
     void testMonitor02() {
-        wireMockServer.stubFor(get(urlEqualTo("/Rest/simple"))
-                .willReturn(ok("这是个一个简化写法"))
+        // 设置Mock响应规则
+        wireMockServer.stubFor(get(urlEqualTo("/api/book/abc"))
+                .willReturn(ok("successful"))
         );
 
+        // 请求已Mock响应规则接口
         given()
                 .when()
-                .get("/Rest/simple")
+                .get("/api/book/abc")
                 .then()
                 .log().all();
     }
@@ -65,13 +72,13 @@ public class TestWireMock {
     @Test
     @DisplayName("重定向")
     void testRedirect() {
-        wireMockServer.stubFor(post(urlEqualTo("/Rest/redirect"))
-                .willReturn(temporaryRedirect("/test/newPlace"))
+        wireMockServer.stubFor(post(urlEqualTo("/api/book/redirect"))
+                .willReturn(temporaryRedirect("/api/book/newPlace"))
         );
 
         given()
                 .when()
-                .post("/Rest/redirect")
+                .post("/api/book/redirect")
                 .then()
                 .log().all();
     }
@@ -86,7 +93,7 @@ public class TestWireMock {
         );
 
         // 匹配符合路径的请求
-        wireMockServer.stubFor(get(urlMatching("/Rest/.*"))
+        wireMockServer.stubFor(get(urlMatching("/api/book/.*"))
                 .atPriority(5)
                 .willReturn(aResponse()
                         .withStatus(402)
@@ -94,7 +101,7 @@ public class TestWireMock {
         );
 
         // 匹配符合路径的请求
-        wireMockServer.stubFor(get(urlEqualTo("/Rest/Test"))
+        wireMockServer.stubFor(get(urlEqualTo("/api/book/test"))
                 .atPriority(1)
                 .willReturn(ok("测试地址"))
         );
@@ -107,13 +114,13 @@ public class TestWireMock {
 
         given()
                 .when()
-                .get("/Rest/none")
+                .get("/api/book/none")
                 .then()
                 .log().all();
 
         given()
                 .when()
-                .get("/Rest/Test")
+                .get("/api/book/test")
                 .then()
                 .log().all();
     }
@@ -121,13 +128,13 @@ public class TestWireMock {
     @Test
     @DisplayName("服务端错误500")
     void testServerError() {
-        wireMockServer.stubFor(post(urlEqualTo("/Rest/serverErr"))
+        wireMockServer.stubFor(post(urlEqualTo("/api/book/err"))
                 .willReturn(serverError())
         );
 
         given()
                 .when()
-                .post("/Rest/serverErr")
+                .post("/api/book/err")
                 .then()
                 .log().all();
     }
@@ -135,18 +142,18 @@ public class TestWireMock {
     @Test
     @DisplayName("场景的使用方法")
     void testScene() {
-        wireMockServer.stubFor(post(urlEqualTo("/Rest/user"))
+        wireMockServer.stubFor(post(urlEqualTo("/rest/user"))
                 .willReturn(ok("{\"user\":\"admin\"}"))
         );
 
-        wireMockServer.stubFor(post(urlEqualTo("/Rest/user"))
+        wireMockServer.stubFor(post(urlEqualTo("/rest/user"))
                 .inScenario("get user")
                 .whenScenarioStateIs(Scenario.STARTED)
                 .willReturn(aResponse().withStatus(204))
                 .willSetStateTo("deleted")
         );
 
-        wireMockServer.stubFor(post(urlEqualTo("/Rest/user"))
+        wireMockServer.stubFor(post(urlEqualTo("/rest/user"))
                 .inScenario("get user")
                 .whenScenarioStateIs("deleted")
                 .willReturn(notFound())
@@ -154,19 +161,19 @@ public class TestWireMock {
 
         given()
                 .when()
-                .post("/Rest/user")
+                .post("/rest/user")
                 .then()
                 .log().all();
 
         given()
                 .when()
-                .delete("/Rest/user")
+                .delete("/rest/user")
                 .then()
                 .log().all();
 
         given()
                 .when()
-                .post("/Rest/user")
+                .post("/rest/user")
                 .then()
                 .log().all();
     }

@@ -18,6 +18,7 @@
         <module>groovy-test-demo</module>
         <module>jsonpath-demo</module>
         <module>sqlite-demo</module>
+        <module>reportng-demo</module>
     </modules>
 
     <build>

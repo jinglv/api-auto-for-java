@@ -400,6 +400,73 @@ then().body() 可以对响应结果进行断言，在 body 中写入断言：
 
 ## 接口响应的断言处理
 
+- Junit5的断言
+
+  - assertTrue、assertEquals...
+  - assertAll
+
+  ```java
+   @Test
+  void getParseResponse() {
+    // Rest-Assured jsonPath的使用
+    JsonPath jsonPath = new JsonPath(response.getBody().asString());
+    System.out.println("repo ID:" + jsonPath.get("id"));
+    // 设置根节点为owner
+    jsonPath.setRoot("owner");
+    System.out.println("owner ID:" + jsonPath.get("id"));
+  
+    // Junit是的断言方式，存在多个断言，其中一个断言失败，则断言失败后续的代码都不会执行
+    // 使用Junit自带断言完成响应校验
+    assertTrue(response.getHeader("status").contains("OK"));
+    assertEquals(jsonPath.getInt("id"), 12013318);
+  
+    // 把多个断言方法放在assertAll中，对多个断言的批量校验
+    assertAll("this is a group assert:",
+              () -> assertTrue(response.getHeader("status").contains("OK")),
+              () -> assertEquals(jsonPath.getInt("id"), 12013318));
+  }
+  ```
+
+  
+
+- Rest-Assured内建校验方式
+
+  ```java
+  		/**
+       * 通过Rest-Assured的内建校验方法实现验证
+       */
+      @Test
+      void validateStatus() {
+          response.then().statusCode(200);
+      }
+  
+      /**
+       * 断言响应header
+       */
+      @Test
+      void validateHeader() {
+          response.then().header("Content-Type", containsString("json"));
+      }
+  
+      /**
+       * 断言响应时间
+       */
+      @Test
+      void validateResponseTime() {
+          response.then().time(lessThan(3000L));
+      }
+  
+      /**
+       * 断言响应body
+       */
+      @Test
+      void validateBody() {
+          response.then().body("owner.login", equalTo("jinglv"));
+      }
+  ```
+
+  
+
 为了模拟各种响应，使用WireMock进行响应规则的配置
 
 ### 响应体为JSON断言(JsonPath(Groovy's GPath))
@@ -661,7 +728,7 @@ class TestResponseXml {
 
 
 
-### JsonSchema断言
+### Json-Schema断言
 [JsonSchema官方文档](https://json-schema.org/understanding-json-schema/)
 
 在实际工作中，对接口返回值进行断言校验，除了常用字段的断言检测以外，还要对其他字段的类型进行检测，原因在于：
@@ -672,7 +739,16 @@ class TestResponseXml {
 
 对返回的字段一个个写断言显然是非常耗时的，这个时候就需要一个模板，可以定义好数据类型和匹配条件，除了关键参数外，其余可直接通过此模板来断言（JsonSchema）
 
-#### JsonSchema模板生成
+#### Json-Schema简介
+
+基于JSON格式定义JSON数据结构的规范
+
+- 描述现有数据格式
+- 人类和机器可读
+- 完整的结构和数据验证
+
+#### Json-Schema模板生成
+
 1. 首先要借助于Json schema tool的网站https://www.jsonschema.net/，将返回json字符串复制到页面左边，然后点击INFER SHCEMA,就会自动转换为schema json文件类型,会将每个地段的返回值类型都设置一个默认类型; 在pattern中也可以写正则进行匹配 
 2. 点击“设置”按钮会出现各个类型返回值更详细的断言设置，这个就是schema最常用也是最实用的功能，也可以对每种类型的字段最更细化的区间值校验或者断言，例如长度，取值范围等，具体感兴趣的话可以从官网学习深入学习；平常对重要字段的校验我通常会选用其他断言，比如hamcrest断言 
 3. 选择复制功能，可以将生成的schema模板保存下来与rest-assured结合使用
@@ -785,8 +861,37 @@ class TestGithubApiResponse {
 
 
 
+## 配置功能Config
+
+常用的内置配置项
+
+```java
+RestAssured.baseURI = "https://api.github.com";
+RestAssured.authentication = oauth2("token");
+RestAssured.authentication = preemptive().basic("lvjing0705@126.com", "lvjing5284");
+RestAssured.port = 443;
+RestAssured.basePath = "/user";
+```
+
+
+
+## 模板Specification
+
+- RequestSpecification 请求模板
+- ResponseSpecification 响应模板
+
+
+
+## 过滤Filter
+
+### 实现request请求的修改
+
+### 实现Response响应的修改
+
+
 
 ## 接口加解密处理
+
 ### base64加解密过程
 - 原始内容 -> 加密内容
 - 加密内容 -> internet -> response -> client

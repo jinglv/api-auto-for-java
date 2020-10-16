@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.45 s <<< FAILURE! - in TestSuite
+test1(com.test.TestMethodsDemo)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [1]
+	at com.test.TestMethodsDemo.test1(TestMethodsDemo.java:11)
+
+logDemo(com.test.TestMethodsDemo)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.RuntimeException: 这是我们自己运行的异常
+	at com.test.TestMethodsDemo.logDemo(TestMethodsDemo.java:27)
+

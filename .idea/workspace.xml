@@ -9,32 +9,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cabead3-ff37-46bf-8c3d-1f9ba3e2a8bc" name="Default Changelist" comment="xiang'mu">
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/main/java/com/demo/utils/OauthClientUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/basic/TestGithubApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/basic/TestGithubApiAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/resassert/TestGithubApiResponseAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/response/TestGithubApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reportng-demo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reportng-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reportng-demo/reportng-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reportng-demo/src/main/resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reportng-demo/src/test/java/com/test/TestMethodsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/main/resources/repo-schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/schema/TestJsonSchema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/spec/TestApiSpec.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-example/spring-boot-mybatis/src/main/java/com/example/mybatis/param/PageParam.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-boot-example/spring-boot-mybatis/src/main/java/com/example/mybatis/param/UserParam.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wiremock-example/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/java/com/wiremock/demo/WireMockApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/__files/responseAddBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/__files/responseBookForId.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/__files/responseDeleteBookForId.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/__files/responseUpdateBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/__files/responseUpdateMessageBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/mappings/deleteBookForId.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/mappings/getAllBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/mappings/getBookForId.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/mappings/patchUpdateBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/mappings/postAddBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/main/resources/mock/mappings/putUpdateBook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wiremock-example/src/test/java/com/api/test/TestBookApi.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wiremock-example/src/test/java/com/wiremock/demo/WireMockForJunit4.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wiremock-example/src/test/java/com/wiremock/demo/WireMockForJunit5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CodingStandard.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extent-report-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/extent-report-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-assured-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-assured-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/basic/TestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/response/TestResponseJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/basic/TestXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/response/TestResponseXml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/src/test/java/com/test/method/TestMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/basic/TestJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/basic/TestXml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-assured-demo/target/test-classes/com/test/method/TestMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiremock-demo/src/test/java/com/test/TestWireMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/src/test/java/com/test/TestWireMock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiremock-demo/target/test-classes/com/test/TestWireMock.class" beforeDir="false" afterPath="$PROJECT_DIR$/wiremock-demo/target/test-classes/com/test/TestWireMock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/com/api/remodeling/RemodelingApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" />
@@ -95,7 +103,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock" value="spock.lang.Specification" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/groovy-test-demo/src/test/java/com/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-demo/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/reportng-demo/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -116,6 +124,23 @@
       <recent name="" />
       <recent name="spock.lang.Specification" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/reportng-demo/src/main/resources" />
+      <recent name="$PROJECT_DIR$/sqlite-demo/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper" />
+      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/mapper" />
+      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/auth" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test" />
+      <recent name="com.demo.utils" />
+      <recent name="com.db.demo.utils" />
+      <recent name="com.test.pojo" />
+      <recent name="com.test.utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper" />
       <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/mapper" />
@@ -123,25 +148,8 @@
       <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/basic" />
       <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/book" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.test" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.demo.utils" />
-      <recent name="com.db.demo.utils" />
-      <recent name="com.test.pojo" />
-      <recent name="com.test.utils" />
-      <recent name="com.test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sqlite-demo/src/main/resources" />
-      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/resources/com.mybatis.demo.mapper" />
-      <recent name="$PROJECT_DIR$/mybatis-demo/src/main/java/com/mybatis/demo/mapper" />
-      <recent name="$PROJECT_DIR$/wiremock-demo/src/main/resources/mock/mappings/auth" />
-      <recent name="$PROJECT_DIR$/mustache-demo/src/main/resources/mustache" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestGithubApiResponseAssert.validateBody">
+  <component name="RunManager" selected="TestNG./Users/apple/JavaProject/api-auto-for-java/reportng-demo/src/main/resources/testng.xml">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -153,93 +161,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGithubApiResponseAssert.getParseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGithubApiAuth.queryRepoBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.resassert.*" />
+          <option name="PATTERN" value="com.test.basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.resassert" />
-      <option name="MAIN_CLASS_NAME" value="com.test.resassert.TestGithubApiResponseAssert" />
-      <option name="METHOD_NAME" value="getParseResponse" />
+      <option name="PACKAGE_NAME" value="com.test.basic" />
+      <option name="MAIN_CLASS_NAME" value="com.test.basic.TestGithubApiAuth" />
+      <option name="METHOD_NAME" value="queryRepoBasic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGithubApiResponseAssert.validateBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJsonSchema.HeaderConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.resassert.*" />
+          <option name="PATTERN" value="com.test.schema.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.resassert" />
-      <option name="MAIN_CLASS_NAME" value="com.test.resassert.TestGithubApiResponseAssert" />
-      <option name="METHOD_NAME" value="validateBody" />
+      <option name="PACKAGE_NAME" value="com.test.schema" />
+      <option name="MAIN_CLASS_NAME" value="com.test.schema.TestJsonSchema" />
+      <option name="METHOD_NAME" value="HeaderConfig" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGithubApiResponseAssert.validateHeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJsonSchema.logConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.resassert.*" />
+          <option name="PATTERN" value="com.test.schema.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.resassert" />
-      <option name="MAIN_CLASS_NAME" value="com.test.resassert.TestGithubApiResponseAssert" />
-      <option name="METHOD_NAME" value="validateHeader" />
+      <option name="PACKAGE_NAME" value="com.test.schema" />
+      <option name="MAIN_CLASS_NAME" value="com.test.schema.TestJsonSchema" />
+      <option name="METHOD_NAME" value="logConfig" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGithubApiResponseAssert.validateResponseTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJsonSchema.testGetRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.resassert.*" />
+          <option name="PATTERN" value="com.test.schema.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test.resassert" />
-      <option name="MAIN_CLASS_NAME" value="com.test.resassert.TestGithubApiResponseAssert" />
-      <option name="METHOD_NAME" value="validateResponseTime" />
+      <option name="PACKAGE_NAME" value="com.test.schema" />
+      <option name="MAIN_CLASS_NAME" value="com.test.schema.TestJsonSchema" />
+      <option name="METHOD_NAME" value="testGetRequest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGithubApiResponse.getParseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.resassert.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.response" />
-      <option name="MAIN_CLASS_NAME" value="com.test.response.TestGithubApiResponse" />
-      <option name="METHOD_NAME" value="getParseResponse" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="/Users/apple/JavaProject/api-auto-for-java/reportng-demo/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="reportng-demo" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/reportng-demo/src/main/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGithubApiResponseAssert.validateBody" />
-        <item itemvalue="JUnit.TestGithubApiResponseAssert.validateResponseTime" />
-        <item itemvalue="JUnit.TestGithubApiResponseAssert.validateHeader" />
-        <item itemvalue="JUnit.TestGithubApiResponseAssert.getParseResponse" />
-        <item itemvalue="JUnit.TestGithubApiResponse.getParseResponse" />
+        <item itemvalue="TestNG./Users/apple/JavaProject/api-auto-for-java/reportng-demo/src/main/resources/testng.xml" />
+        <item itemvalue="JUnit.TestJsonSchema.logConfig" />
+        <item itemvalue="JUnit.TestJsonSchema.HeaderConfig" />
+        <item itemvalue="JUnit.TestJsonSchema.testGetRequest" />
+        <item itemvalue="JUnit.TestGithubApiAuth.queryRepoBasic" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +300,10 @@
       <workItem from="1602317975780" duration="1335000" />
       <workItem from="1602484322071" duration="7073000" />
       <workItem from="1602554227844" duration="659000" />
-      <workItem from="1602565289729" duration="13263000" />
+      <workItem from="1602565289729" duration="13452000" />
+      <workItem from="1602643901255" duration="7051000" />
+      <workItem from="1602670016785" duration="1153000" />
+      <workItem from="1602671431006" duration="4111000" />
     </task>
     <task id="LOCAL-00001" summary="pom调整">
       <created>1593678279065</created>
@@ -370,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602311275644</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat:Rest-Assured学习--新增及优化认证、请求、断言">
+      <created>1602586500239</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602586500239</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +437,8 @@
     <MESSAGE value="feat:增加mybatis学习笔记" />
     <MESSAGE value="chore:调整格式" />
     <MESSAGE value="feat:Java操作SQLite和MyBatis整合SQLite" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:Java操作SQLite和MyBatis整合SQLite" />
+    <MESSAGE value="feat:Rest-Assured学习--新增及优化认证、请求、断言" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:Rest-Assured学习--新增及优化认证、请求、断言" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="115" key="#Inspections" timestamp="1596609197822">
@@ -450,66 +463,67 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="482" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596596620208" />
-    <state x="161" y="23" key="CommitChangelistDialog2" timestamp="1602311275446">
+    <state x="161" y="23" key="CommitChangelistDialog2" timestamp="1602586499785">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446906926" />
     <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602311275446" />
+    <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.812@0.23.1440.812" timestamp="1602586499785" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694669815" />
     <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540544845" />
     <state x="161" y="23" key="CommitChangelistDialog2/0.23.1440.816@0.23.1440.816" timestamp="1600331842411" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598008346438" />
     <state x="133" y="23" key="CommitChangelistDialog2/0.23.1440.820@0.23.1440.820" timestamp="1597142554432" />
-    <state width="1396" height="243" key="GridCell.Tab.0.bottom" timestamp="1602585951187">
+    <state width="1396" height="449" key="GridCell.Tab.0.bottom" timestamp="1602828939324">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
     <state width="1396" height="189" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1595926324083" />
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926174" />
-    <state width="1396" height="243" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602585951187" />
-    <state width="1396" height="290" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1602551960378" />
+    <state width="1396" height="449" key="GridCell.Tab.0.bottom/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602828939324" />
+    <state width="1396" height="188" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1602586542078" />
     <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349360" />
     <state width="1396" height="532" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
     <state width="1396" height="206" key="GridCell.Tab.0.bottom/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061620" />
     <state width="1396" height="270" key="GridCell.Tab.0.bottom/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936624" />
     <state width="1396" height="232" key="GridCell.Tab.0.bottom/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281790" />
-    <state width="1396" height="243" key="GridCell.Tab.0.center" timestamp="1602585951186">
+    <state width="1396" height="449" key="GridCell.Tab.0.center" timestamp="1602828939323">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
     <state width="1396" height="189" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state width="1396" height="215" key="GridCell.Tab.0.center/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
-    <state width="1396" height="243" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602585951186" />
-    <state width="1396" height="290" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1602551960377" />
+    <state width="1396" height="449" key="GridCell.Tab.0.center/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602828939323" />
+    <state width="1396" height="188" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1602586542077" />
     <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349359" />
     <state width="1396" height="532" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
     <state width="1396" height="206" key="GridCell.Tab.0.center/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061619" />
     <state width="1396" height="270" key="GridCell.Tab.0.center/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936622" />
     <state width="1396" height="232" key="GridCell.Tab.0.center/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711654" />
     <state width="1396" height="222" key="GridCell.Tab.0.center/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281789" />
-    <state width="1396" height="243" key="GridCell.Tab.0.left" timestamp="1602585951185">
+    <state width="1396" height="449" key="GridCell.Tab.0.left" timestamp="1602828939322">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200498" />
     <state width="1396" height="189" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state width="1396" height="215" key="GridCell.Tab.0.left/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926172" />
-    <state width="1396" height="243" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602585951185" />
-    <state width="1396" height="290" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1602551960377" />
+    <state width="1396" height="449" key="GridCell.Tab.0.left/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602828939322" />
+    <state width="1396" height="188" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1602586542077" />
     <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349358" />
     <state width="1396" height="532" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1596686821918" />
     <state width="1396" height="206" key="GridCell.Tab.0.left/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061618" />
     <state width="1396" height="270" key="GridCell.Tab.0.left/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598006936622" />
     <state width="1396" height="232" key="GridCell.Tab.0.left/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597133711653" />
     <state width="1396" height="222" key="GridCell.Tab.0.left/0.23.1440.821/1440.-102.1920.1057@0.23.1440.821" timestamp="1600075281788" />
-    <state width="1396" height="243" key="GridCell.Tab.0.right" timestamp="1602585951187">
+    <state width="1396" height="449" key="GridCell.Tab.0.right" timestamp="1602828939324">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808/1440.-102.1920.1057@0.23.1440.808" timestamp="1595927200499" />
     <state width="1396" height="189" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1595926324082" />
     <state width="1396" height="215" key="GridCell.Tab.0.right/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446926173" />
-    <state width="1396" height="243" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602585951187" />
-    <state width="1396" height="290" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1602551960378" />
+    <state width="1396" height="449" key="GridCell.Tab.0.right/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602828939324" />
+    <state width="1396" height="188" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1602586542078" />
     <state width="1396" height="222" key="GridCell.Tab.0.right/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600314349359" />
     <state width="1396" height="532" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1596686821919" />
     <state width="1396" height="206" key="GridCell.Tab.0.right/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1600336061619" />
@@ -554,11 +568,12 @@
     <state x="243" y="23" key="SettingsEditor/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1600313735742" />
     <state x="229" y="23" key="SettingsEditor/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1599648654563" />
     <state x="243" y="90" key="SettingsEditor/0.23.1440.819/1440.-102.1920.1057@0.23.1440.819" timestamp="1598005967293" />
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1602311277353">
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1602586501816">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.811/1440.-102.1920.1057@0.23.1440.811" timestamp="1596446909831" />
     <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602311277353" />
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.812@0.23.1440.812" timestamp="1602586501816" />
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596694672162" />
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1596540547454" />
     <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1600331845994" />
@@ -584,10 +599,10 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="418" y="159" width="604" height="548" key="find.popup/0.23.1440.820/1440.-102.1920.1057@0.23.1440.820" timestamp="1597047033797" />
-    <state x="121" y="72" key="new project wizard" timestamp="1602299587849">
+    <state x="38" y="98" key="new project wizard" timestamp="1602672181974">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state x="121" y="72" key="new project wizard/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602299587849" />
+    <state x="38" y="98" key="new project wizard/0.23.1440.812/1440.-102.1920.1057@0.23.1440.812" timestamp="1602672181974" />
     <state x="121" y="72" key="new project wizard/0.23.1440.812@0.23.1440.812" timestamp="1596096345531" />
     <state x="121" y="72" key="new project wizard/0.23.1440.814/1440.-102.1920.1057@0.23.1440.814" timestamp="1596431857854" />
     <state x="121" y="72" key="new project wizard/0.23.1440.816/1440.-102.1920.1057@0.23.1440.816" timestamp="1599635988518" />

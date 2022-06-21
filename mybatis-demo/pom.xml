@@ -13,7 +13,7 @@
 
     <properties>
         <mybatis.version>3.5.5</mybatis.version>
-        <mysql.version>8.0.20</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
 
